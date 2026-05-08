@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://b0an4viqpg2xw"]
+
+[ext_resource type="Script" uid="uid://byi2tpqj5dqhe" path="res://puzzle_index.gd" id="1_j2jos"]
+[ext_resource type="Texture2D" uid="uid://bmsxl8sgknhb3" path="res://forwardarrow.png" id="2_6qjgx"]
+[ext_resource type="Texture2D" uid="uid://dtk7xyodhi2f7" path="res://backarrow.png" id="3_7x1f3"]
+
+[sub_resource type="Gradient" id="Gradient_03ub4"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_j2jos"]
+gradient = SubResource("Gradient_03ub4")
+
+[sub_resource type="Gradient" id="Gradient_airhj"]
+offsets = PackedFloat32Array(0.8674699)
+colors = PackedColorArray(0.59569436, 0.88715255, 0.34962934, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6qjgx"]
+gradient = SubResource("Gradient_airhj")
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7x1f3"]
+width = 271
+height = 271
+
+[sub_resource type="Gradient" id="Gradient_2csxt"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.42352942, 1, 0.42745098, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5aa23"]
+gradient = SubResource("Gradient_2csxt")
+width = 271
+height = 271
+
+[sub_resource type="Gradient" id="Gradient_888ic"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0.48235294, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_aggeh"]
+gradient = SubResource("Gradient_888ic")
+width = 271
+height = 271
+
+[sub_resource type="Gradient" id="Gradient_6qjgx"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0.48235294, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2csxt"]
+gradient = SubResource("Gradient_6qjgx")
+
+[node name="PuzzleIndex" type="Node2D" unique_id=1819706955]
+script = ExtResource("1_j2jos")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=300114452]
+position = Vector2(466, 285.00003)
+scale = Vector2(17.9375, 10.8125)
+texture = SubResource("GradientTexture2D_j2jos")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=527337062]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.49997, 134.49998)
+scale = Vector2(1.0585939, 268.99997)
+texture = SubResource("GradientTexture1D_6qjgx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=535428014]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_7x1f3")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=962482278]
+position = Vector2(480.49997, 134.49998)
+texture = SubResource("GradientTexture2D_5aa23")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=1881265678]
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_aggeh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=615041619]
+offset_left = 377.0
+offset_top = 270.0
+offset_right = 584.0
+offset_bottom = 539.0
+theme_override_constants/separation = 3
+metadata/_edit_group_ = true
+
+[node name="Puzzle001" type="Button" parent="VBoxContainer" unique_id=573623180]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 001"
+
+[node name="Puzzle002" type="Button" parent="VBoxContainer" unique_id=303096472]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 002"
+
+[node name="Puzzle003" type="Button" parent="VBoxContainer" unique_id=2100922228]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 003"
+
+[node name="Puzzle004" type="Button" parent="VBoxContainer" unique_id=579283050]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 004"
+
+[node name="Puzzle005" type="Button" parent="VBoxContainer" unique_id=1938584011]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 005"
+
+[node name="Puzzle006" type="Button" parent="VBoxContainer" unique_id=1864508773]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 006"
+
+[node name="Puzzle007" type="Button" parent="VBoxContainer" unique_id=368728220]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 007"
+
+[node name="Puzzle008" type="Button" parent="VBoxContainer" unique_id=138055433]
+layout_mode = 2
+toggle_mode = true
+text = "Puzzle 008"
+
+[node name="ForwardArrow" type="Button" parent="." unique_id=1085373128]
+offset_left = 586.0
+offset_top = 378.0
+offset_right = 595.0
+offset_bottom = 394.0
+scale = Vector2(3, 3)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="ForwardArrow" unique_id=1393533911]
+position = Vector2(4.6666636, 8.333333)
+scale = Vector2(0.15625013, 0.28124997)
+texture = SubResource("GradientTexture2D_2csxt")
+
+[node name="Sprite2D" type="Sprite2D" parent="ForwardArrow" unique_id=1085166458]
+position = Vector2(1, 8.333333)
+texture = ExtResource("2_6qjgx")
+
+[node name="BackwardArrow" type="Button" parent="." unique_id=392423680]
+offset_left = 347.0
+offset_top = 378.0
+offset_right = 356.0
+offset_bottom = 394.0
+scale = Vector2(3, 3)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="BackwardArrow" unique_id=1663266742]
+position = Vector2(4.4999957, 7.999994)
+scale = Vector2(0.15104176, 0.26041648)
+texture = SubResource("GradientTexture2D_2csxt")
+
+[node name="Sprite2D" type="Sprite2D" parent="BackwardArrow" unique_id=1710455917]
+position = Vector2(9, 8)
+texture = ExtResource("3_7x1f3")
+
+[node name="Solve" type="Button" parent="." unique_id=1595048399]
+offset_left = 530.0
+offset_top = 231.0
+offset_right = 599.0
+offset_bottom = 262.0
+text = "Solve It!"
+
+[connection signal="pressed" from="VBoxContainer/Puzzle001" to="." method="_on_puzzle_001_pressed"]
+[connection signal="pressed" from="VBoxContainer/Puzzle002" to="." method="_on_puzzle_002_pressed"]
+[connection signal="pressed" from="VBoxContainer/Puzzle003" to="." method="_on_puzzle_003_pressed"]
+[connection signal="pressed" from="VBoxContainer/Puzzle004" to="." method="_on_puzzle_004_pressed"]
+[connection signal="pressed" from="VBoxContainer/Puzzle005" to="." method="_on_puzzle_005_pressed"]
+[connection signal="pressed" from="VBoxContainer/Puzzle006" to="." method="_on_puzzle_006_pressed"]
+[connection signal="pressed" from="VBoxContainer/Puzzle007" to="." method="_on_puzzle_007_pressed"]
+[connection signal="pressed" from="VBoxContainer/Puzzle008" to="." method="_on_puzzle_008_pressed"]
+[connection signal="pressed" from="ForwardArrow" to="." method="_on_forward_arrow_pressed"]
+[connection signal="pressed" from="BackwardArrow" to="." method="_on_backward_arrow_pressed"]
+[connection signal="pressed" from="Solve" to="." method="_on_solve_pressed"]

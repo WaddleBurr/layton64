@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d158wheatg4vq"]
+
+[ext_resource type="Script" uid="uid://bquur28ivpl65" path="res://puzzle_001.gd" id="1_vp55d"]
+
+[node name="Puzzle 001" type="Node2D" unique_id=1263361177]
+script = ExtResource("1_vp55d")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1015238599]
+offset_left = 7.0
+offset_top = 622.0
+offset_right = 75.5
+offset_bottom = 653.0

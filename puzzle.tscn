@@ -1,0 +1,3171 @@
+[gd_scene format=3 uid="uid://d158wheatg4vq"]
+
+[ext_resource type="Script" uid="uid://bquur28ivpl65" path="res://puzzle.gd" id="1_03ub4"]
+[ext_resource type="Gradient" uid="uid://fyjlddnv4oy5" path="res://new_gradient.tres" id="2_77j1r"]
+[ext_resource type="Script" uid="uid://dy2lqpo1sbr3y" path="res://memoscreen.gd" id="3_hgotr"]
+[ext_resource type="Texture2D" uid="uid://cwufffdqlxoro" path="res://smalleraser.png" id="4_mgmmf"]
+[ext_resource type="Texture2D" uid="uid://djvt2d2srl4nv" path="res://bigeraseer.png" id="5_hrnaw"]
+[ext_resource type="Texture2D" uid="uid://n750n7qu5n40" path="res://smallpencil.png" id="6_dcmwq"]
+[ext_resource type="Texture2D" uid="uid://bc34dj4funt0p" path="res://bigpencil.png" id="7_soxwv"]
+
+[sub_resource type="Gradient" id="Gradient_0i81r"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qcpr0"]
+gradient = SubResource("Gradient_0i81r")
+
+[sub_resource type="Gradient" id="Gradient_8r8aw"]
+offsets = PackedFloat32Array(0.8674699)
+colors = PackedColorArray(0.59569436, 0.88715255, 0.34962934, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mgmmf"]
+gradient = SubResource("Gradient_8r8aw")
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1181d"]
+gradient = ExtResource("2_77j1r")
+width = 271
+height = 271
+
+[sub_resource type="Gradient" id="Gradient_mgmmf"]
+offsets = PackedFloat32Array(0.64457834)
+colors = PackedColorArray(0, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hrnaw"]
+gradient = SubResource("Gradient_mgmmf")
+width = 271
+height = 271
+fill_from = Vector2(1, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hgotr"]
+load_path = "res://.godot/imported/HD_transparent_picture.png-78a167c1bd875d043e1ea0e6762d4e59.ctex"
+
+[sub_resource type="Gradient" id="Gradient_hgotr"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0.38039216, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q2gwe"]
+gradient = SubResource("Gradient_hgotr")
+width = 70
+height = 180
+fill_from = Vector2(0.12608695, 0.04347826)
+
+[sub_resource type="Gradient" id="Gradient_hrnaw"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_dcmwq"]
+gradient = SubResource("Gradient_hrnaw")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_abq33"]
+offsets = PackedFloat32Array(0.9879518)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8r8aw"]
+gradient = SubResource("Gradient_abq33")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_l8m3r"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_17gu3"]
+gradient = SubResource("Gradient_l8m3r")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_em32v"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0, 0, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_j30kt"]
+gradient = SubResource("Gradient_em32v")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_xjbv5"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0, 1, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cptg4"]
+gradient = SubResource("Gradient_xjbv5")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_nyye0"]
+offsets = PackedFloat32Array(0.9939759)
+colors = PackedColorArray(1, 0.4745098, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_74lqf"]
+gradient = SubResource("Gradient_nyye0")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_eyay6"]
+offsets = PackedFloat32Array(0.9879518)
+colors = PackedColorArray(1, 1, 0.48235294, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vnyl5"]
+gradient = SubResource("Gradient_eyay6")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_jx4c4"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.7411765, 0.5176471, 0.16862746, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_16wmo"]
+gradient = SubResource("Gradient_jx4c4")
+width = 24
+height = 16
+
+[sub_resource type="Gradient" id="Gradient_dcmwq"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0.32156864, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_soxwv"]
+gradient = SubResource("Gradient_dcmwq")
+width = 271
+height = 272
+fill_from = Vector2(0.8826087, 0.5608696)
+
+[sub_resource type="Gradient" id="Gradient_soxwv"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0i81r"]
+gradient = SubResource("Gradient_soxwv")
+width = 271
+height = 272
+fill_from = Vector2(0.8826087, 0.5608696)
+
+[sub_resource type="Gradient" id="Gradient_77j1r"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7exmc"]
+gradient = SubResource("Gradient_77j1r")
+fill_from = Vector2(0, 0.32173914)
+fill_to = Vector2(0.6130435, 0.2521739)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_03ub4"]
+gradient = ExtResource("2_77j1r")
+width = 271
+height = 271
+
+[sub_resource type="Gradient" id="Gradient_q2gwe"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.93318635, 0.81859446, 0.5501691, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_re6l2"]
+gradient = SubResource("Gradient_q2gwe")
+
+[sub_resource type="Gradient" id="Gradient_ubegh"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.8862745, 0.9098039, 0.5137255, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mgmmf"]
+gradient = SubResource("Gradient_ubegh")
+width = 266
+height = 47
+
+[sub_resource type="Animation" id="Animation_77j1r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PicaratAnnouncement:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PuzzleAnnouncement:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PuzzleAnnouncement/Sprite2D5:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PuzzleAnnouncement/Sprite2D5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(480, 405)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PuzzleAnnouncement/Sprite2D5/VBoxContainer/Title:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("PuzzleAnnouncement/Sprite2D:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PuzzleAnnouncement/Sprite2D:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("PicaratAnnouncement/Sprite2D5:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("PicaratAnnouncement/Sprite2D3:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("PicaratAnnouncement/Sprite2D2:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/Sprite2D2:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/UI/PuzzleNumber:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/UI/Picarats:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/UI/Coin:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/RichTextLabel:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/HBoxContainer:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CanvasLayer/TextAnswer:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CanvasLayer/Submit:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CanvasLayer/ButtonA:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CanvasLayer/ButtonB:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CanvasLayer/ButtonC:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CanvasLayer/ButtonD:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CanvasLayer/UI:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("CanvasLayer/Memo/Memoscreen:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(480.5, 675)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("CanvasLayer/Memo/Memoscreen:visible")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CanvasLayer/Memo/Memoback:disabled")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CanvasLayer/Memo/Memoback:visible")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("CanvasLayer/Memo/Memoback:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(616.315, 306)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("CanvasLayer/Memo/EraseAll:disabled")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("CanvasLayer/Memo/Erasersmall:disabled")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("CanvasLayer/Memo/Eraserbig:disabled")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("CanvasLayer/Memo/Pencilsmall:disabled")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("CanvasLayer/Memo/Pencilbig:disabled")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("CanvasLayer/Memo/Black:disabled")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("CanvasLayer/Memo/Red:disabled")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("CanvasLayer/Memo/Green:disabled")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("CanvasLayer/Memo/Tan:disabled")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("CanvasLayer/Memo/Brown:disabled")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("CanvasLayer/Memo/Orange:disabled")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("CanvasLayer/Memo/Blue:disabled")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("CanvasLayer/Memo/White:disabled")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("CanvasLayer/Memo/EraseAll:visible")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("CanvasLayer/Memo/Erasersmall:visible")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("CanvasLayer/Memo/Eraserbig:visible")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("CanvasLayer/Memo/Pencilsmall:visible")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("CanvasLayer/Memo/Pencilbig:visible")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("CanvasLayer/Memo/Black:visible")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("CanvasLayer/Memo/Red:visible")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("CanvasLayer/Memo/Green:visible")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("CanvasLayer/Memo/Tan:visible")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("CanvasLayer/Memo/Brown:visible")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/54/type = "value"
+tracks/54/imported = false
+tracks/54/enabled = true
+tracks/54/path = NodePath("CanvasLayer/Memo/Orange:visible")
+tracks/54/interp = 1
+tracks/54/loop_wrap = true
+tracks/54/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/55/type = "value"
+tracks/55/imported = false
+tracks/55/enabled = true
+tracks/55/path = NodePath("CanvasLayer/Memo/Blue:visible")
+tracks/55/interp = 1
+tracks/55/loop_wrap = true
+tracks/55/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/56/type = "value"
+tracks/56/imported = false
+tracks/56/enabled = true
+tracks/56/path = NodePath("CanvasLayer/Memo/White:visible")
+tracks/56/interp = 1
+tracks/56/loop_wrap = true
+tracks/56/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/57/type = "value"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("CanvasLayer/Memo/EraseAll:position")
+tracks/57/interp = 1
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(617, 305)]
+}
+tracks/58/type = "value"
+tracks/58/imported = false
+tracks/58/enabled = true
+tracks/58/path = NodePath("CanvasLayer/Memo/Erasersmall:position")
+tracks/58/interp = 1
+tracks/58/loop_wrap = true
+tracks/58/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(616, 344)]
+}
+tracks/59/type = "value"
+tracks/59/imported = false
+tracks/59/enabled = true
+tracks/59/path = NodePath("CanvasLayer/Memo/Eraserbig:position")
+tracks/59/interp = 1
+tracks/59/loop_wrap = true
+tracks/59/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(648, 344)]
+}
+tracks/60/type = "value"
+tracks/60/imported = false
+tracks/60/enabled = true
+tracks/60/path = NodePath("CanvasLayer/Memo/Pencilsmall:position")
+tracks/60/interp = 1
+tracks/60/loop_wrap = true
+tracks/60/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(616, 379)]
+}
+tracks/61/type = "value"
+tracks/61/imported = false
+tracks/61/enabled = true
+tracks/61/path = NodePath("CanvasLayer/Memo/Pencilbig:position")
+tracks/61/interp = 1
+tracks/61/loop_wrap = true
+tracks/61/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(648, 379)]
+}
+tracks/62/type = "value"
+tracks/62/imported = false
+tracks/62/enabled = true
+tracks/62/path = NodePath("CanvasLayer/Memo/Black:position")
+tracks/62/interp = 1
+tracks/62/loop_wrap = true
+tracks/62/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(613, 414)]
+}
+tracks/63/type = "value"
+tracks/63/imported = false
+tracks/63/enabled = true
+tracks/63/path = NodePath("CanvasLayer/Memo/Red:position")
+tracks/63/interp = 1
+tracks/63/loop_wrap = true
+tracks/63/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(613, 442)]
+}
+tracks/64/type = "value"
+tracks/64/imported = false
+tracks/64/enabled = true
+tracks/64/path = NodePath("CanvasLayer/Memo/Green:position")
+tracks/64/interp = 1
+tracks/64/loop_wrap = true
+tracks/64/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(613, 469)]
+}
+tracks/65/type = "value"
+tracks/65/imported = false
+tracks/65/enabled = true
+tracks/65/path = NodePath("CanvasLayer/Memo/Tan:position")
+tracks/65/interp = 1
+tracks/65/loop_wrap = true
+tracks/65/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(613, 497)]
+}
+tracks/66/type = "value"
+tracks/66/imported = false
+tracks/66/enabled = true
+tracks/66/path = NodePath("CanvasLayer/Memo/Brown:position")
+tracks/66/interp = 1
+tracks/66/loop_wrap = true
+tracks/66/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(648, 497)]
+}
+tracks/67/type = "value"
+tracks/67/imported = false
+tracks/67/enabled = true
+tracks/67/path = NodePath("CanvasLayer/Memo/Orange:position")
+tracks/67/interp = 1
+tracks/67/loop_wrap = true
+tracks/67/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(648, 469)]
+}
+tracks/68/type = "value"
+tracks/68/imported = false
+tracks/68/enabled = true
+tracks/68/path = NodePath("CanvasLayer/Memo/Blue:position")
+tracks/68/interp = 1
+tracks/68/loop_wrap = true
+tracks/68/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(648, 442)]
+}
+tracks/69/type = "value"
+tracks/69/imported = false
+tracks/69/enabled = true
+tracks/69/path = NodePath("CanvasLayer/Memo/White:position")
+tracks/69/interp = 1
+tracks/69/loop_wrap = true
+tracks/69/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(648, 414)]
+}
+tracks/70/type = "value"
+tracks/70/imported = false
+tracks/70/enabled = true
+tracks/70/path = NodePath("CanvasLayer/Memo/Sprite2D:position")
+tracks/70/interp = 1
+tracks/70/loop_wrap = true
+tracks/70/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(652, 405)]
+}
+tracks/71/type = "value"
+tracks/71/imported = false
+tracks/71/enabled = true
+tracks/71/path = NodePath("PuzzleUI/Back:modulate")
+tracks/71/interp = 1
+tracks/71/loop_wrap = true
+tracks/71/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/72/type = "value"
+tracks/72/imported = false
+tracks/72/enabled = true
+tracks/72/path = NodePath("PuzzleUI/Hint:modulate")
+tracks/72/interp = 1
+tracks/72/loop_wrap = true
+tracks/72/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/73/type = "value"
+tracks/73/imported = false
+tracks/73/enabled = true
+tracks/73/path = NodePath("PuzzleUI/Memo:modulate")
+tracks/73/interp = 1
+tracks/73/loop_wrap = true
+tracks/73/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_03ub4"]
+resource_name = "begin puzzle"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PicaratAnnouncement:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PuzzleAnnouncement:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PuzzleAnnouncement/Sprite2D5:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PuzzleAnnouncement/Sprite2D5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.79999995, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(480.5, 404), Vector2(480.5, 135)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PuzzleAnnouncement/Sprite2D5/VBoxContainer/Title:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.15, 1.18),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("PuzzleAnnouncement/Sprite2D:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PuzzleAnnouncement/Sprite2D:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.2333333, 1.2833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("PicaratAnnouncement/Sprite2D5:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1.69, 2, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("PicaratAnnouncement/Sprite2D3:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(1.69, 2, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("PicaratAnnouncement/Sprite2D2:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(1.69, 2, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/Sprite2D2:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/UI/PuzzleNumber:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/UI/Picarats:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/UI/Coin:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/RichTextLabel:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hgotr"]
+resource_name = "end puzzle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/RichTextLabel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/HBoxContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/TextAnswer:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/Submit:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/ButtonA:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/ButtonB:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/ButtonC:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/ButtonD:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/UI:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("PuzzleUI/Back:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("PuzzleUI/Hint:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("PuzzleUI/Memo:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ubegh"]
+resource_name = "memooff"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Memo/Memoscreen:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(480.5, 404), Vector2(480.5, 675)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Memo/Memoscreen:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Memo/Memoback:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Memo/Memoback:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Memo/Memoback:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(551.125, 269.395), Vector2(616.315, 269.395)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/Memo/EraseAll:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/Memo/Erasersmall:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/Memo/Eraserbig:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/Memo/Pencilsmall:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/Memo/Pencilbig:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/Memo/Black:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/Memo/Red:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/Memo/Green:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/Memo/Tan:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/Memo/Brown:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/Memo/Orange:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/Memo/Blue:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/Memo/White:visible")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CanvasLayer/Memo/EraseAll:disabled")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CanvasLayer/Memo/Erasersmall:disabled")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CanvasLayer/Memo/Eraserbig:disabled")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CanvasLayer/Memo/Pencilsmall:disabled")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CanvasLayer/Memo/Pencilbig:disabled")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CanvasLayer/Memo/Black:disabled")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CanvasLayer/Memo/Red:disabled")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CanvasLayer/Memo/Green:disabled")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("CanvasLayer/Memo/Tan:disabled")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("CanvasLayer/Memo/Brown:disabled")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CanvasLayer/Memo/Orange:disabled")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CanvasLayer/Memo/Blue:disabled")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("CanvasLayer/Memo/White:disabled")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("CanvasLayer/Memo/EraseAll:position")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(553, 303), Vector2(623, 304)]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("CanvasLayer/Memo/Erasersmall:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(552, 342), Vector2(622, 343)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("CanvasLayer/Memo/Eraserbig:position")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(584, 342), Vector2(654, 343)]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("CanvasLayer/Memo/Pencilsmall:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(552, 377), Vector2(622, 378)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("CanvasLayer/Memo/Pencilbig:position")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(584, 377), Vector2(654, 378)]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("CanvasLayer/Memo/Black:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(549, 412), Vector2(619, 413)]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("CanvasLayer/Memo/Red:position")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(549, 440), Vector2(619, 441)]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("CanvasLayer/Memo/Blue:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(584, 440), Vector2(654, 441)]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("CanvasLayer/Memo/White:position")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(584, 412), Vector2(654, 413)]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("CanvasLayer/Memo/Green:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(549, 467), Vector2(619, 468)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("CanvasLayer/Memo/Orange:position")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(584, 467), Vector2(654, 468)]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("CanvasLayer/Memo/Brown:position")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(584, 495), Vector2(654, 496)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("CanvasLayer/Memo/Tan:position")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(549, 495), Vector2(619, 496)]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("CanvasLayer/Memo/Sprite2D:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(583, 399.00003), Vector2(653, 399.00003)]
+}
+
+[sub_resource type="Animation" id="Animation_mgmmf"]
+resource_name = "memoon"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Memo/Memoscreen:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(480.5, 675), Vector2(480.5, 404)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Memo/Memoscreen:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Memo/Memoback:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Memo/Memoback:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Memo/Memoback:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(616.315, 269.395), Vector2(551.125, 269.395)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/Memo/EraseAll:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/Memo/Erasersmall:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/Memo/Eraserbig:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/Memo/Pencilsmall:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/Memo/Pencilbig:disabled")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/Memo/Black:disabled")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/Memo/Red:disabled")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/Memo/Green:disabled")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/Memo/Tan:disabled")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/Memo/Brown:disabled")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/Memo/Orange:disabled")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/Memo/Blue:disabled")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/Memo/White:disabled")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CanvasLayer/Memo/EraseAll:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CanvasLayer/Memo/Erasersmall:visible")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CanvasLayer/Memo/Eraserbig:visible")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CanvasLayer/Memo/Pencilsmall:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CanvasLayer/Memo/Pencilbig:visible")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CanvasLayer/Memo/Black:visible")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CanvasLayer/Memo/Red:visible")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CanvasLayer/Memo/Green:visible")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("CanvasLayer/Memo/Tan:visible")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("CanvasLayer/Memo/Brown:visible")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CanvasLayer/Memo/Orange:visible")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CanvasLayer/Memo/Blue:visible")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("CanvasLayer/Memo/White:visible")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("CanvasLayer/Memo/EraseAll:position")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(617, 305), Vector2(551, 304)]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("CanvasLayer/Memo/Erasersmall:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(616, 344), Vector2(550, 343)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("CanvasLayer/Memo/Eraserbig:position")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(648, 344), Vector2(582, 343)]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("CanvasLayer/Memo/Pencilsmall:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(616, 379), Vector2(550, 378)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("CanvasLayer/Memo/Pencilbig:position")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(648, 379), Vector2(582, 378)]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("CanvasLayer/Memo/Black:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(613, 414), Vector2(547, 413)]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("CanvasLayer/Memo/Red:position")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(613, 442), Vector2(547, 441)]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("CanvasLayer/Memo/Green:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(613, 469), Vector2(547, 468)]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("CanvasLayer/Memo/Tan:position")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(613, 497), Vector2(547, 496)]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("CanvasLayer/Memo/Brown:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(648, 497), Vector2(582, 496)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("CanvasLayer/Memo/Orange:position")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(648, 469), Vector2(582, 468)]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("CanvasLayer/Memo/Blue:position")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(648, 442), Vector2(582, 441)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("CanvasLayer/Memo/White:position")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(648, 414), Vector2(582, 413)]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("CanvasLayer/Memo/Sprite2D:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(652, 405), Vector2(580, 399.00003)]
+}
+
+[sub_resource type="Animation" id="Animation_q2gwe"]
+resource_name = "movetoinputscreen"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_re6l2"]
+resource_name = "movetopicturescreen"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_77j1r"]
+_data = {
+&"RESET": SubResource("Animation_77j1r"),
+&"begin puzzle": SubResource("Animation_03ub4"),
+&"end puzzle": SubResource("Animation_hgotr"),
+&"memooff": SubResource("Animation_ubegh"),
+&"memoon": SubResource("Animation_mgmmf"),
+&"movetoinputscreen": SubResource("Animation_q2gwe"),
+&"movetopicturescreen": SubResource("Animation_re6l2")
+}
+
+[node name="Puzzle" type="Node2D" unique_id=1263361177]
+position = Vector2(750.008, 4.5079956)
+script = ExtResource("1_03ub4")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1896437714]
+position = Vector2(-316.008, 274.492)
+scale = Vector2(17.9375, 10.8125)
+texture = SubResource("GradientTexture2D_qcpr0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=912965112]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1452937407]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.49997, 134.49998)
+scale = Vector2(1.0585939, 268.99997)
+texture = SubResource("GradientTexture1D_mgmmf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer" unique_id=983497566]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_1181d")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1216626415]
+offset_left = 343.0
+offset_top = 331.0
+offset_right = 615.0
+offset_bottom = 423.64
+theme_override_constants/separation = -1
+alignment = 1
+
+[node name="Digit1" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=1265629457]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Digit2" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=42282079]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Digit3" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=1190949021]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Digit4" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=1777082937]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextAnswer" type="LineEdit" parent="CanvasLayer" unique_id=1015238599]
+offset_left = 387.0
+offset_top = 376.0
+offset_right = 569.0
+offset_bottom = 453.0
+
+[node name="Sprite2D3" type="Sprite2D" parent="CanvasLayer" unique_id=1620252936]
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_hrnaw")
+
+[node name="ButtonA" type="Button" parent="CanvasLayer" unique_id=1245588425]
+visible = false
+offset_left = 414.0
+offset_top = 341.0
+offset_right = 433.0
+offset_bottom = 372.0
+text = "2"
+
+[node name="ButtonB" type="Button" parent="CanvasLayer" unique_id=743727524]
+visible = false
+offset_left = 501.0
+offset_top = 340.0
+offset_right = 547.0
+offset_bottom = 371.0
+text = "Fish"
+
+[node name="ButtonC" type="Button" parent="CanvasLayer" unique_id=290012959]
+visible = false
+offset_left = 410.0
+offset_top = 407.0
+offset_right = 429.0
+offset_bottom = 438.0
+text = "2"
+
+[node name="ButtonD" type="Button" parent="CanvasLayer" unique_id=598131228]
+visible = false
+offset_left = 500.0
+offset_top = 402.0
+offset_right = 546.0
+offset_bottom = 433.0
+text = "Fish"
+
+[node name="UI" type="HBoxContainer" parent="CanvasLayer" unique_id=556737557]
+offset_left = 346.0
+offset_right = 616.0
+offset_bottom = 25.0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="PuzzleNumber" type="Label" parent="CanvasLayer/UI" unique_id=1816859590]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "No. 001"
+
+[node name="Picarats" type="Label" parent="CanvasLayer/UI" unique_id=1359874634]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "10 Picarats"
+
+[node name="Coin" type="Label" parent="CanvasLayer/UI" unique_id=216855146]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Coins: 10"
+
+[node name="Submit" type="Button" parent="CanvasLayer" unique_id=82211641]
+anchors_preset = -1
+anchor_left = 0.026041666
+anchor_right = 0.026041666
+offset_left = 508.0
+offset_top = 470.0
+offset_right = 596.0
+offset_bottom = 526.0
+text = "Submit"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1522503342]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_top = 0.027777778
+anchor_bottom = 0.027777778
+offset_left = 356.0
+offset_top = 10.0
+offset_right = 602.0
+offset_bottom = 257.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "What is 9 + 10?"
+metadata/_edit_use_anchors_ = true
+
+[node name="Memo" type="CanvasLayer" parent="CanvasLayer" unique_id=2108896973]
+
+[node name="Memoscreen" type="Sprite2D" parent="CanvasLayer/Memo" unique_id=782054579]
+visible = false
+position = Vector2(480.5, 675)
+texture = SubResource("CompressedTexture2D_hgotr")
+script = ExtResource("3_hgotr")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Memo" unique_id=86392385]
+visible = false
+position = Vector2(652, 405)
+scale = Vector2(1, 1.5096942)
+texture = SubResource("GradientTexture2D_q2gwe")
+
+[node name="Sprite2D3" type="Sprite2D" parent="CanvasLayer/Memo" unique_id=310151039]
+position = Vector2(1190, 306.00003)
+scale = Vector2(17.9375, 10.8125)
+texture = SubResource("GradientTexture2D_qcpr0")
+
+[node name="Memoback" type="Button" parent="CanvasLayer/Memo" unique_id=372632170]
+visible = false
+offset_left = 616.315
+offset_top = 306.0
+offset_right = 674.315
+offset_bottom = 337.0
+disabled = true
+text = "Back"
+
+[node name="EraseAll" type="Button" parent="CanvasLayer/Memo" unique_id=1161030987]
+visible = false
+offset_left = 617.0
+offset_top = 305.0
+offset_right = 675.0
+offset_bottom = 336.0
+theme_override_font_sizes/font_size = 12
+disabled = true
+text = "Erase All"
+
+[node name="Erasersmall" type="Button" parent="CanvasLayer/Memo" unique_id=1697136077]
+visible = false
+offset_left = 616.0
+offset_top = 344.0
+offset_right = 640.0
+offset_bottom = 368.0
+scale = Vector2(1.2, 1.2)
+disabled = true
+toggle_mode = true
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Memo/Erasersmall" unique_id=686110927]
+position = Vector2(12.000027, 12.000003)
+scale = Vector2(1.2500006, 1.2500006)
+texture = ExtResource("4_mgmmf")
+
+[node name="Eraserbig" type="Button" parent="CanvasLayer/Memo" unique_id=1890509795]
+visible = false
+offset_left = 648.0
+offset_top = 344.0
+offset_right = 672.0
+offset_bottom = 368.0
+scale = Vector2(1.2, 1.2)
+disabled = true
+toggle_mode = true
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Memo/Eraserbig" unique_id=1225201250]
+position = Vector2(12.000014, 12.000003)
+scale = Vector2(1.2499996, 1.2500006)
+texture = ExtResource("5_hrnaw")
+
+[node name="Pencilsmall" type="Button" parent="CanvasLayer/Memo" unique_id=1380850535]
+visible = false
+offset_left = 616.0
+offset_top = 379.0
+offset_right = 640.0
+offset_bottom = 403.0
+scale = Vector2(1.2, 1.2)
+disabled = true
+toggle_mode = true
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Memo/Pencilsmall" unique_id=1238375948]
+position = Vector2(11.999982, 12.000016)
+scale = Vector2(1.2500013, 1.250002)
+texture = ExtResource("6_dcmwq")
+
+[node name="Pencilbig" type="Button" parent="CanvasLayer/Memo" unique_id=1130677143]
+visible = false
+offset_left = 648.0
+offset_top = 379.0
+offset_right = 672.0
+offset_bottom = 403.0
+scale = Vector2(1.2, 1.2)
+disabled = true
+toggle_mode = true
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Memo/Pencilbig" unique_id=472961215]
+position = Vector2(11.999965, 12.000012)
+scale = Vector2(1.2499992, 1.2500004)
+texture = ExtResource("7_soxwv")
+
+[node name="Black" type="Button" parent="CanvasLayer/Memo" unique_id=1945402843]
+visible = false
+offset_left = 613.0
+offset_top = 414.0
+offset_right = 645.0
+offset_bottom = 438.0
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_dcmwq")
+
+[node name="White" type="Button" parent="CanvasLayer/Memo" unique_id=1080030119]
+visible = false
+offset_left = 648.0
+offset_top = 414.0
+offset_right = 680.0
+offset_bottom = 438.0
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_8r8aw")
+
+[node name="Red" type="Button" parent="CanvasLayer/Memo" unique_id=611907883]
+visible = false
+offset_left = 613.0
+offset_top = 442.0
+offset_right = 645.0
+offset_bottom = 466.0
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_17gu3")
+
+[node name="Blue" type="Button" parent="CanvasLayer/Memo" unique_id=71115098]
+visible = false
+offset_left = 648.0
+offset_top = 442.0
+offset_right = 680.0
+offset_bottom = 466.0
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_j30kt")
+
+[node name="Green" type="Button" parent="CanvasLayer/Memo" unique_id=1532753616]
+visible = false
+offset_left = 613.0
+offset_top = 469.0
+offset_right = 645.0
+offset_bottom = 493.0
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_cptg4")
+
+[node name="Orange" type="Button" parent="CanvasLayer/Memo" unique_id=1304783498]
+visible = false
+offset_left = 648.0
+offset_top = 469.0
+offset_right = 680.0
+offset_bottom = 493.0
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_74lqf")
+
+[node name="Tan" type="Button" parent="CanvasLayer/Memo" unique_id=2120029015]
+visible = false
+offset_left = 613.0
+offset_top = 497.0
+offset_right = 645.0
+offset_bottom = 521.0001
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_vnyl5")
+
+[node name="Brown" type="Button" parent="CanvasLayer/Memo" unique_id=396658462]
+visible = false
+offset_left = 648.0
+offset_top = 497.0
+offset_right = 680.0
+offset_bottom = 521.0001
+disabled = true
+toggle_mode = true
+icon = SubResource("GradientTexture2D_16wmo")
+
+[node name="HintScreen" type="CanvasLayer" parent="CanvasLayer" unique_id=723650711]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/HintScreen" unique_id=1319408402]
+position = Vector2(480.5, 404.5)
+texture = SubResource("GradientTexture2D_soxwv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer/HintScreen" unique_id=2096777033]
+position = Vector2(479, 417)
+scale = Vector2(0.92250925, 0.7941176)
+texture = SubResource("GradientTexture2D_0i81r")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/HintScreen" unique_id=1543281480]
+anchors_preset = -1
+anchor_right = 0.042000003
+anchor_bottom = 0.074
+offset_left = 407.0
+offset_top = 398.0
+offset_right = 517.68
+offset_bottom = 384.04
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Unlock a new hint?"
+
+[node name="Yes" type="Button" parent="CanvasLayer/HintScreen" unique_id=1043540106]
+offset_left = 412.0
+offset_top = 466.0
+offset_right = 451.0
+offset_bottom = 497.0
+text = "OK!"
+
+[node name="No" type="Button" parent="CanvasLayer/HintScreen" unique_id=1554915618]
+offset_left = 502.0
+offset_top = 467.0
+offset_right = 546.0
+offset_bottom = 498.0
+text = "No"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HintScreen" unique_id=624613606]
+offset_left = 345.0
+offset_top = 268.0
+offset_right = 557.0
+offset_bottom = 308.0
+theme_override_constants/separation = 0
+
+[node name="Hint1" type="Button" parent="CanvasLayer/HintScreen/HBoxContainer" unique_id=701128330]
+layout_mode = 2
+toggle_mode = true
+text = "Hint1"
+
+[node name="Hint2" type="Button" parent="CanvasLayer/HintScreen/HBoxContainer" unique_id=1125113626]
+layout_mode = 2
+disabled = true
+toggle_mode = true
+text = "Hint2"
+
+[node name="Hint3" type="Button" parent="CanvasLayer/HintScreen/HBoxContainer" unique_id=442785155]
+layout_mode = 2
+disabled = true
+toggle_mode = true
+text = "Hint3"
+
+[node name="Hint4" type="Button" parent="CanvasLayer/HintScreen/HBoxContainer" unique_id=197969766]
+layout_mode = 2
+disabled = true
+toggle_mode = true
+text = "S. Hint"
+
+[node name="Hintback" type="Button" parent="CanvasLayer/HintScreen" unique_id=1752314141]
+offset_left = 571.0
+offset_top = 268.0
+offset_right = 616.0
+offset_bottom = 308.0
+text = "Back"
+
+[node name="PuzzleUI" type="CanvasLayer" parent="." unique_id=513475367]
+
+[node name="Back" type="Button" parent="PuzzleUI" unique_id=1353233107]
+offset_left = 556.0
+offset_top = 339.0
+offset_right = 615.0
+offset_bottom = 370.0
+text = "Back"
+
+[node name="Hint" type="Button" parent="PuzzleUI" unique_id=24169299]
+offset_left = 557.0
+offset_top = 274.0
+offset_right = 615.0
+offset_bottom = 305.0
+text = "Hint"
+
+[node name="Memo" type="Button" parent="PuzzleUI" unique_id=1935283228]
+offset_left = 557.0
+offset_top = 306.0
+offset_right = 615.0
+offset_bottom = 337.0
+text = "Memo"
+
+[node name="PuzzleAnnouncement" type="CanvasLayer" parent="." unique_id=926661249]
+
+[node name="Sprite2D5" type="Sprite2D" parent="PuzzleAnnouncement" unique_id=493658049]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480, 405)
+texture = SubResource("GradientTexture2D_1181d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PuzzleAnnouncement/Sprite2D5" unique_id=8949705]
+offset_left = -117.139244
+offset_top = -94.91806
+offset_right = 115.860756
+offset_bottom = 87.64456
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="PuzzleAnnouncement/Sprite2D5/VBoxContainer" unique_id=29488861]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Puzzle!"
+horizontal_alignment = 1
+
+[node name="PuzzleNumber" type="Label" parent="PuzzleAnnouncement/Sprite2D5/VBoxContainer" unique_id=70604365]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "No. 001"
+
+[node name="Title" type="Label" parent="PuzzleAnnouncement/Sprite2D5/VBoxContainer" unique_id=94734559]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+text = "The Doctor's Pills"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="PuzzleAnnouncement" unique_id=2102929723]
+position = Vector2(475.5, 268.68)
+scale = Vector2(4.578125, 0.02124973)
+texture = SubResource("GradientTexture2D_7exmc")
+
+[node name="PicaratAnnouncement" type="CanvasLayer" parent="." unique_id=1455184414]
+
+[node name="Sprite2D5" type="Sprite2D" parent="PicaratAnnouncement" unique_id=1089889115]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_03ub4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PicaratAnnouncement/Sprite2D5" unique_id=1210990444]
+offset_left = -103.99999
+offset_top = -109.0
+offset_right = 104.00001
+offset_bottom = 73.563
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="PicaratAnnouncement/Sprite2D5/VBoxContainer" unique_id=1293700963]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "This puzzle is worth"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="PicaratAnnouncement/Sprite2D5/VBoxContainer" unique_id=1137183755]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "10/10"
+horizontal_alignment = 1
+
+[node name="Title" type="Label" parent="PicaratAnnouncement/Sprite2D5/VBoxContainer" unique_id=501285377]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+text = "Picarats"
+horizontal_alignment = 1
+
+[node name="Sprite2D2" type="Sprite2D" parent="PicaratAnnouncement" unique_id=909654329]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.49997, 513)
+scale = Vector2(1.0507811, 50.00002)
+texture = SubResource("GradientTexture1D_re6l2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="PicaratAnnouncement" unique_id=158457333]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(481, 514)
+texture = SubResource("GradientTexture2D_mgmmf")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PicaratAnnouncement/Sprite2D3" unique_id=770817553]
+offset_left = -132.0
+offset_top = -22.0
+offset_right = 131.0
+offset_bottom = 23.0
+theme_override_constants/separation = 99
+alignment = 1
+
+[node name="Scorelabel" type="Label" parent="PicaratAnnouncement/Sprite2D3/HBoxContainer" unique_id=951800207]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "total score:"
+
+[node name="Total" type="Label" parent="PicaratAnnouncement/Sprite2D3/HBoxContainer" unique_id=1810706284]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0 picarats"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1782918131]
+libraries/ = SubResource("AnimationLibrary_77j1r")
+
+[node name="Cover" type="CanvasLayer" parent="." unique_id=517257750]
+visible = false
+
+[node name="Sprite2D4" type="Sprite2D" parent="Cover" unique_id=291334642]
+position = Vector2(94.500015, 299.50003)
+scale = Vector2(7.828126, 11.703125)
+texture = SubResource("GradientTexture2D_qcpr0")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Cover" unique_id=1354738501]
+position = Vector2(866.75, 296)
+scale = Vector2(7.8359375, 11.703125)
+texture = SubResource("GradientTexture2D_qcpr0")
+
+[connection signal="pressed" from="CanvasLayer/ButtonA" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonB" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonC" to="." method="_on_button_c_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonD" to="." method="_on_button_d_pressed"]
+[connection signal="pressed" from="CanvasLayer/Submit" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Memo/Memoback" to="." method="_on_memoback_pressed"]
+[connection signal="pressed" from="CanvasLayer/Memo/EraseAll" to="CanvasLayer/Memo/Memoscreen" method="_on_erase_all_pressed"]
+[connection signal="toggled" from="CanvasLayer/Memo/Erasersmall" to="CanvasLayer/Memo/Memoscreen" method="_on_erasersmall_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Eraserbig" to="CanvasLayer/Memo/Memoscreen" method="_on_eraserbig_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Pencilsmall" to="CanvasLayer/Memo/Memoscreen" method="_on_pencilsmall_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Pencilbig" to="CanvasLayer/Memo/Memoscreen" method="_on_pencilbig_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Black" to="CanvasLayer/Memo/Memoscreen" method="_on_black_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/White" to="CanvasLayer/Memo/Memoscreen" method="_on_white_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Red" to="CanvasLayer/Memo/Memoscreen" method="_on_red_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Blue" to="CanvasLayer/Memo/Memoscreen" method="_on_blue_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Green" to="CanvasLayer/Memo/Memoscreen" method="_on_green_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Orange" to="CanvasLayer/Memo/Memoscreen" method="_on_orange_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Tan" to="CanvasLayer/Memo/Memoscreen" method="_on_tan_toggled"]
+[connection signal="toggled" from="CanvasLayer/Memo/Brown" to="CanvasLayer/Memo/Memoscreen" method="_on_brown_toggled"]
+[connection signal="pressed" from="CanvasLayer/HintScreen/Hintback" to="." method="_on_hintback_pressed"]
+[connection signal="pressed" from="PuzzleUI/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="PuzzleUI/Hint" to="." method="_on_hint_pressed"]
+[connection signal="pressed" from="PuzzleUI/Memo" to="." method="_on_memo_pressed"]

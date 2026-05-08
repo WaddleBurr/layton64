@@ -1,0 +1,1381 @@
+[gd_scene format=3 uid="uid://d158wheatg4vq"]
+
+[ext_resource type="Script" uid="uid://bquur28ivpl65" path="res://puzzle.gd" id="1_03ub4"]
+[ext_resource type="Gradient" uid="uid://fyjlddnv4oy5" path="res://new_gradient.tres" id="2_77j1r"]
+[ext_resource type="Script" uid="uid://dy2lqpo1sbr3y" path="res://memoscreen.gd" id="3_hgotr"]
+
+[sub_resource type="Gradient" id="Gradient_03ub4"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qcpr0"]
+gradient = SubResource("Gradient_03ub4")
+
+[sub_resource type="Gradient" id="Gradient_re6l2"]
+offsets = PackedFloat32Array(0.8674699)
+colors = PackedColorArray(0.59569436, 0.88715255, 0.34962934, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mgmmf"]
+gradient = SubResource("Gradient_re6l2")
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1181d"]
+gradient = ExtResource("2_77j1r")
+width = 271
+height = 271
+
+[sub_resource type="Gradient" id="Gradient_mgmmf"]
+offsets = PackedFloat32Array(0.64457834)
+colors = PackedColorArray(0, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hrnaw"]
+gradient = SubResource("Gradient_mgmmf")
+width = 271
+height = 271
+fill_from = Vector2(1, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hgotr"]
+load_path = "res://.godot/imported/HD_transparent_picture.png-78a167c1bd875d043e1ea0e6762d4e59.ctex"
+
+[sub_resource type="Gradient" id="Gradient_77j1r"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7exmc"]
+gradient = SubResource("Gradient_77j1r")
+fill_from = Vector2(0, 0.32173914)
+fill_to = Vector2(0.6130435, 0.2521739)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_03ub4"]
+gradient = ExtResource("2_77j1r")
+width = 271
+height = 271
+
+[sub_resource type="Gradient" id="Gradient_q2gwe"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.93318635, 0.81859446, 0.5501691, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_re6l2"]
+gradient = SubResource("Gradient_q2gwe")
+
+[sub_resource type="Gradient" id="Gradient_ubegh"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.8862745, 0.9098039, 0.5137255, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mgmmf"]
+gradient = SubResource("Gradient_ubegh")
+width = 266
+height = 47
+
+[sub_resource type="Animation" id="Animation_77j1r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PicaratAnnouncement:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PuzzleAnnouncement:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PuzzleAnnouncement/Sprite2D5:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PuzzleAnnouncement/Sprite2D5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(480, 405)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PuzzleAnnouncement/Sprite2D5/VBoxContainer/Title:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("PuzzleAnnouncement/Sprite2D:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PuzzleAnnouncement/Sprite2D:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("PicaratAnnouncement/Sprite2D5:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("PicaratAnnouncement/Sprite2D3:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("PicaratAnnouncement/Sprite2D2:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/Sprite2D2:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/UI/PuzzleNumber:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/UI/Picarats:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/UI/Coin:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/RichTextLabel:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/HBoxContainer:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CanvasLayer/TextAnswer:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CanvasLayer/Submit:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CanvasLayer/ButtonA:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CanvasLayer/ButtonB:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CanvasLayer/ButtonC:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CanvasLayer/ButtonD:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CanvasLayer/UI:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("PuzzleUI/Back:visible")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("PuzzleUI/Back:modulate")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CanvasLayer/Memo/Memoscreen:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(480.5, 675)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CanvasLayer/Memo/Memoscreen:visible")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("CanvasLayer/Memo/Memoback:disabled")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("CanvasLayer/Memo/Memoback:visible")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("CanvasLayer/Memo/Memoback:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(616.315, 306)]
+}
+
+[sub_resource type="Animation" id="Animation_03ub4"]
+resource_name = "begin puzzle"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PicaratAnnouncement:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PuzzleAnnouncement:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PuzzleAnnouncement/Sprite2D5:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PuzzleAnnouncement/Sprite2D5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.79999995, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(480.5, 404), Vector2(480.5, 135)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PuzzleAnnouncement/Sprite2D5/VBoxContainer/Title:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.15, 1.18),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("PuzzleAnnouncement/Sprite2D:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PuzzleAnnouncement/Sprite2D:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.2333333, 1.2833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("PicaratAnnouncement/Sprite2D5:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1.69, 2, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("PicaratAnnouncement/Sprite2D3:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(1.69, 2, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("PicaratAnnouncement/Sprite2D2:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(1.69, 2, 3.4666667, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/Sprite2D2:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/UI/PuzzleNumber:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/UI/Picarats:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/UI/Coin:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/RichTextLabel:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(5, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hgotr"]
+resource_name = "end puzzle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/RichTextLabel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/HBoxContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/TextAnswer:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/Submit:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/ButtonA:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/ButtonB:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/ButtonC:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/ButtonD:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/UI:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("PuzzleUI/Back:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ubegh"]
+resource_name = "memooff"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Memo/Memoscreen:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(480.5, 404), Vector2(480.5, 675)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Memo/Memoscreen:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Memo/Memoback:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Memo/Memoback:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Memo/Memoback:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(553.36, 306), Vector2(616.315, 306)]
+}
+
+[sub_resource type="Animation" id="Animation_mgmmf"]
+resource_name = "memoon"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Memo/Memoscreen:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(480.5, 675), Vector2(480.5, 404)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Memo/Memoscreen:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Memo/Memoback:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Memo/Memoback:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Memo/Memoback:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(616.315, 306), Vector2(553.36, 306)]
+}
+
+[sub_resource type="Animation" id="Animation_q2gwe"]
+resource_name = "movetoinputscreen"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PuzzleUI/Back:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PuzzleUI/Back:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_re6l2"]
+resource_name = "movetopicturescreen"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Sprite2D3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PuzzleUI/Back:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PuzzleUI/Back:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_77j1r"]
+_data = {
+&"RESET": SubResource("Animation_77j1r"),
+&"begin puzzle": SubResource("Animation_03ub4"),
+&"end puzzle": SubResource("Animation_hgotr"),
+&"memooff": SubResource("Animation_ubegh"),
+&"memoon": SubResource("Animation_mgmmf"),
+&"movetoinputscreen": SubResource("Animation_q2gwe"),
+&"movetopicturescreen": SubResource("Animation_re6l2")
+}
+
+[node name="Puzzle" type="Node2D" unique_id=1263361177]
+position = Vector2(750.008, 4.5079956)
+script = ExtResource("1_03ub4")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1896437714]
+position = Vector2(-316.008, 274.492)
+scale = Vector2(17.9375, 10.8125)
+texture = SubResource("GradientTexture2D_qcpr0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=912965112]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1452937407]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.49997, 134.49998)
+scale = Vector2(1.0585939, 268.99997)
+texture = SubResource("GradientTexture1D_mgmmf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer" unique_id=983497566]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_1181d")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1216626415]
+visible = false
+offset_left = 343.0
+offset_top = 331.0
+offset_right = 615.0
+offset_bottom = 423.64
+theme_override_constants/separation = -1
+alignment = 1
+
+[node name="Digit1" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=1265629457]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Digit2" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=42282079]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Digit3" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=1190949021]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Digit4" type="LineEdit" parent="CanvasLayer/HBoxContainer" unique_id=1777082937]
+layout_mode = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_font_sizes/font_size = 61
+max_length = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextAnswer" type="LineEdit" parent="CanvasLayer" unique_id=1015238599]
+offset_left = 387.0
+offset_top = 376.0
+offset_right = 569.0
+offset_bottom = 453.0
+
+[node name="Sprite2D3" type="Sprite2D" parent="CanvasLayer" unique_id=1620252936]
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_hrnaw")
+
+[node name="ButtonA" type="Button" parent="CanvasLayer" unique_id=1245588425]
+visible = false
+offset_left = 414.0
+offset_top = 341.0
+offset_right = 433.0
+offset_bottom = 372.0
+text = "2"
+
+[node name="ButtonB" type="Button" parent="CanvasLayer" unique_id=743727524]
+visible = false
+offset_left = 501.0
+offset_top = 340.0
+offset_right = 547.0
+offset_bottom = 371.0
+text = "Fish"
+
+[node name="ButtonC" type="Button" parent="CanvasLayer" unique_id=290012959]
+visible = false
+offset_left = 410.0
+offset_top = 407.0
+offset_right = 429.0
+offset_bottom = 438.0
+text = "2"
+
+[node name="ButtonD" type="Button" parent="CanvasLayer" unique_id=598131228]
+visible = false
+offset_left = 500.0
+offset_top = 402.0
+offset_right = 546.0
+offset_bottom = 433.0
+text = "Fish"
+
+[node name="UI" type="HBoxContainer" parent="CanvasLayer" unique_id=556737557]
+offset_left = 346.0
+offset_right = 616.0
+offset_bottom = 25.0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="PuzzleNumber" type="Label" parent="CanvasLayer/UI" unique_id=1816859590]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "No. 001"
+
+[node name="Picarats" type="Label" parent="CanvasLayer/UI" unique_id=1359874634]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "10 Picarats"
+
+[node name="Coin" type="Label" parent="CanvasLayer/UI" unique_id=216855146]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Coins: 10"
+
+[node name="Submit" type="Button" parent="CanvasLayer" unique_id=82211641]
+offset_left = 517.0
+offset_top = 469.0
+offset_right = 605.0
+offset_bottom = 525.0
+text = "Submit"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1522503342]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_top = 0.027777778
+offset_left = 356.0
+offset_top = 10.0
+offset_right = 602.0
+offset_bottom = 257.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "What is 9 + 10?"
+metadata/_edit_use_anchors_ = true
+
+[node name="Memo" type="CanvasLayer" parent="CanvasLayer" unique_id=2108896973]
+
+[node name="Memoscreen" type="Sprite2D" parent="CanvasLayer/Memo" unique_id=782054579]
+visible = false
+position = Vector2(480.5, 675)
+texture = SubResource("CompressedTexture2D_hgotr")
+script = ExtResource("3_hgotr")
+
+[node name="Memoback" type="Button" parent="CanvasLayer/Memo" unique_id=372632170]
+visible = false
+offset_left = 616.315
+offset_top = 306.0
+offset_right = 674.315
+offset_bottom = 337.0
+disabled = true
+text = "Back"
+
+[node name="PuzzleUI" type="CanvasLayer" parent="." unique_id=513475367]
+
+[node name="Back" type="Button" parent="PuzzleUI" unique_id=1353233107]
+visible = false
+modulate = Color(1, 1, 1, 0)
+offset_left = 556.0
+offset_top = 339.0
+offset_right = 615.0
+offset_bottom = 370.0
+text = "Back"
+
+[node name="Hint" type="Button" parent="PuzzleUI" unique_id=24169299]
+offset_left = 557.0
+offset_top = 274.0
+offset_right = 615.0
+offset_bottom = 305.0
+text = "Hint"
+
+[node name="Memo" type="Button" parent="PuzzleUI" unique_id=1935283228]
+offset_left = 557.0
+offset_top = 306.0
+offset_right = 615.0
+offset_bottom = 337.0
+text = "Memo"
+
+[node name="PuzzleAnnouncement" type="CanvasLayer" parent="." unique_id=926661249]
+
+[node name="Sprite2D5" type="Sprite2D" parent="PuzzleAnnouncement" unique_id=493658049]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480, 405)
+texture = SubResource("GradientTexture2D_1181d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PuzzleAnnouncement/Sprite2D5" unique_id=8949705]
+offset_left = -117.139244
+offset_top = -94.91806
+offset_right = 115.860756
+offset_bottom = 87.64456
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="PuzzleAnnouncement/Sprite2D5/VBoxContainer" unique_id=29488861]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Puzzle!"
+horizontal_alignment = 1
+
+[node name="PuzzleNumber" type="Label" parent="PuzzleAnnouncement/Sprite2D5/VBoxContainer" unique_id=70604365]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "No. 001"
+
+[node name="Title" type="Label" parent="PuzzleAnnouncement/Sprite2D5/VBoxContainer" unique_id=94734559]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+text = "The Doctor's Pills"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="PuzzleAnnouncement" unique_id=2102929723]
+position = Vector2(475.5, 268.68)
+scale = Vector2(4.578125, 0.02124973)
+texture = SubResource("GradientTexture2D_7exmc")
+
+[node name="PicaratAnnouncement" type="CanvasLayer" parent="." unique_id=1455184414]
+
+[node name="Sprite2D5" type="Sprite2D" parent="PicaratAnnouncement" unique_id=1089889115]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.5, 404)
+texture = SubResource("GradientTexture2D_03ub4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PicaratAnnouncement/Sprite2D5" unique_id=1210990444]
+offset_left = -103.99999
+offset_top = -109.0
+offset_right = 104.00001
+offset_bottom = 73.563
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="PicaratAnnouncement/Sprite2D5/VBoxContainer" unique_id=1293700963]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "This puzzle is worth"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="PicaratAnnouncement/Sprite2D5/VBoxContainer" unique_id=1137183755]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "10/10"
+horizontal_alignment = 1
+
+[node name="Title" type="Label" parent="PicaratAnnouncement/Sprite2D5/VBoxContainer" unique_id=501285377]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+text = "Picarats"
+horizontal_alignment = 1
+
+[node name="Sprite2D2" type="Sprite2D" parent="PicaratAnnouncement" unique_id=909654329]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480.49997, 513)
+scale = Vector2(1.0507811, 50.00002)
+texture = SubResource("GradientTexture1D_re6l2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="PicaratAnnouncement" unique_id=158457333]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(481, 514)
+texture = SubResource("GradientTexture2D_mgmmf")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PicaratAnnouncement/Sprite2D3" unique_id=770817553]
+offset_left = -132.0
+offset_top = -22.0
+offset_right = 131.0
+offset_bottom = 23.0
+theme_override_constants/separation = 99
+alignment = 1
+
+[node name="Scorelabel" type="Label" parent="PicaratAnnouncement/Sprite2D3/HBoxContainer" unique_id=951800207]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "total score:"
+
+[node name="Total" type="Label" parent="PicaratAnnouncement/Sprite2D3/HBoxContainer" unique_id=1810706284]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0 picarats"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1782918131]
+libraries/ = SubResource("AnimationLibrary_77j1r")
+
+[node name="Cover" type="CanvasLayer" parent="." unique_id=517257750]
+
+[node name="Sprite2D4" type="Sprite2D" parent="Cover" unique_id=291334642]
+position = Vector2(94.500015, 299.50003)
+scale = Vector2(7.828126, 11.703125)
+texture = SubResource("GradientTexture2D_qcpr0")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Cover" unique_id=1354738501]
+position = Vector2(866.75, 296)
+scale = Vector2(7.8359375, 11.703125)
+texture = SubResource("GradientTexture2D_qcpr0")
+
+[connection signal="pressed" from="CanvasLayer/ButtonA" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonB" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonC" to="." method="_on_button_c_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonD" to="." method="_on_button_d_pressed"]
+[connection signal="pressed" from="CanvasLayer/Submit" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Memo/Memoback" to="." method="_on_memoback_pressed"]
+[connection signal="pressed" from="PuzzleUI/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="PuzzleUI/Memo" to="." method="_on_memo_pressed"]

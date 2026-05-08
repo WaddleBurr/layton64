@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://s7r41kyhkbbi"]
+
+[ext_resource type="Script" uid="uid://c6plbkemgmjat" path="res://save_screen.gd" id="1_ttohy"]
+
+[sub_resource type="Gradient" id="Gradient_pkhjh"]
+offsets = PackedFloat32Array(0.984252)
+colors = PackedColorArray(0.13725491, 0.40392157, 0.2901961, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xem7y"]
+gradient = SubResource("Gradient_pkhjh")
+
+[node name="SaveScreen" type="Node2D" unique_id=1495216254]
+script = ExtResource("1_ttohy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=73072502]
+position = Vector2(518.5, 311.5)
+scale = Vector2(17.203125, 10.734375)
+texture = SubResource("GradientTexture2D_xem7y")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=840591021]
+offset_left = 197.0
+offset_top = 106.0
+offset_right = 844.0
+offset_bottom = 217.0
+theme_override_font_sizes/normal_font_size = 64
+text = "Professor Layton 64"
+
+[node name="File1" type="Button" parent="." unique_id=60194500]
+offset_left = 391.0
+offset_top = 229.0
+offset_right = 652.0
+offset_bottom = 304.0
+theme_override_font_sizes/font_size = 48
+text = "File1"
+
+[node name="File2" type="Button" parent="." unique_id=1140552476]
+offset_left = 391.0
+offset_top = 325.0
+offset_right = 652.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 48
+text = "File2"
+
+[node name="File3" type="Button" parent="." unique_id=1244691983]
+offset_left = 387.0
+offset_top = 417.0
+offset_right = 648.0
+offset_bottom = 492.0
+theme_override_font_sizes/font_size = 48
+text = "File3"
+
+[connection signal="pressed" from="File1" to="." method="_on_file_1_pressed"]
+[connection signal="pressed" from="File2" to="." method="_on_file_2_pressed"]
+[connection signal="pressed" from="File3" to="." method="_on_file_3_pressed"]

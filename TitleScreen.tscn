@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://db6r0s6x632xa"]
+
+[ext_resource type="Script" uid="uid://bvnyv0ygrdnnu" path="res://title_screen.gd" id="1_fnlyl"]
+
+[sub_resource type="Gradient" id="Gradient_fnlyl"]
+offsets = PackedFloat32Array(0.984252)
+colors = PackedColorArray(0.13725491, 0.40392157, 0.2901961, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fnlyl"]
+gradient = SubResource("Gradient_fnlyl")
+
+[node name="Title" type="Node2D" unique_id=2063247899]
+script = ExtResource("1_fnlyl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1982291350]
+position = Vector2(518.5, 311.5)
+scale = Vector2(17.203125, 10.734375)
+texture = SubResource("GradientTexture2D_fnlyl")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=584586537]
+offset_left = 197.0
+offset_top = 106.0
+offset_right = 844.0
+offset_bottom = 217.0
+theme_override_font_sizes/normal_font_size = 64
+text = "Professor Layton 64"
+
+[node name="NewGame" type="Button" parent="." unique_id=540288014]
+offset_left = 391.0
+offset_top = 229.0
+offset_right = 652.0
+offset_bottom = 304.0
+theme_override_font_sizes/font_size = 48
+text = "New Game"
+
+[node name="Continue" type="Button" parent="." unique_id=872899401]
+offset_left = 391.0
+offset_top = 325.0
+offset_right = 652.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 48
+text = "Continue"
+
+[node name="Bonuses" type="Button" parent="." unique_id=781812180]
+offset_left = 387.0
+offset_top = 417.0
+offset_right = 648.0
+offset_bottom = 492.0
+theme_override_font_sizes/font_size = 48
+text = "Bonuses"
+
+[connection signal="pressed" from="NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Bonuses" to="." method="_on_bonuses_pressed"]

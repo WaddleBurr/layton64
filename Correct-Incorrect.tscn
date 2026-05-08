@@ -1,0 +1,316 @@
+[gd_scene format=3 uid="uid://d6wxmhlcr83c"]
+
+[ext_resource type="Script" uid="uid://c8n6ci1x73bs6" path="res://correct_incorrect.gd" id="1_5uqjk"]
+
+[sub_resource type="Gradient" id="Gradient_vfnoi"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5uqjk"]
+gradient = SubResource("Gradient_vfnoi")
+
+[sub_resource type="Gradient" id="Gradient_vp55d"]
+offsets = PackedFloat32Array(0.15060242)
+colors = PackedColorArray(0.99730164, 0.80100214, 0.52350783, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m0h47"]
+gradient = SubResource("Gradient_vp55d")
+fill_from = Vector2(0, 0.32173914)
+fill_to = Vector2(0.6130435, 0.2521739)
+
+[sub_resource type="Gradient" id="Gradient_5uqjk"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 0.40392157, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nelhj"]
+gradient = SubResource("Gradient_5uqjk")
+
+[sub_resource type="Animation" id="Animation_m0h47"]
+resource_name = "Correct"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 0.7583333, 1.1333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 270), Vector2(0, 270), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer2/Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.75, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_nelhj"]
+resource_name = "End"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer2/Sprite2D2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer2/Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_a7mdl"]
+resource_name = "Incorrect"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 0.7583333, 1.1333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 270), Vector2(0, 270), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer2/Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer2/Sprite2D2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.75, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5uqjk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 270)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer2/Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer2/Sprite2D2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nelhj"]
+_data = {
+&"Correct": SubResource("Animation_m0h47"),
+&"End": SubResource("Animation_nelhj"),
+&"Incorrect": SubResource("Animation_a7mdl"),
+&"RESET": SubResource("Animation_5uqjk")
+}
+
+[node name="Correct_Incorrect" type="Node2D" unique_id=365902113]
+script = ExtResource("1_5uqjk")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1856073843]
+position = Vector2(434, 279)
+scale = Vector2(17.9375, 10.8125)
+texture = SubResource("GradientTexture2D_5uqjk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2093504608]
+offset = Vector2(0, 270)
+transform = Transform2D(1, 0, 0, 1, 0, 270)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1062938111]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480, 135)
+scale = Vector2(4.23, 4.23)
+texture = SubResource("GradientTexture2D_m0h47")
+
+[node name="Label" type="Label" parent="CanvasLayer/Sprite2D" unique_id=1842401377]
+anchors_preset = -1
+anchor_left = -0.12189716
+anchor_right = 0.94243336
+offset_left = -23.877066
+offset_top = -8.274231
+offset_right = 178.471
+offset_bottom = 59.842926
+scale = Vector2(0.236, 0.236)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "CORRECT"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=278529565]
+offset = Vector2(0, 270)
+transform = Transform2D(1, 0, 0, 1, 0, 270)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer2" unique_id=1293201933]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(480, 135)
+scale = Vector2(4.23, 4.23)
+texture = SubResource("GradientTexture2D_m0h47")
+
+[node name="Label" type="Label" parent="CanvasLayer2/Sprite2D" unique_id=888283359]
+offset_left = -30.732857
+offset_top = -29.078012
+offset_right = 320.26715
+offset_bottom = 39.039146
+scale = Vector2(0.236, 0.236)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Picarats Earned:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Picarats" type="Label" parent="CanvasLayer2/Sprite2D" unique_id=1208578213]
+anchors_preset = -1
+anchor_left = -2.119212
+anchor_right = -2.119212
+offset_left = 104.66028
+offset_top = -22.695034
+offset_right = 455.66028
+offset_bottom = 78.30496
+scale = Vector2(0.236, 0.236)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 73
+text = "1000"
+metadata/_edit_use_anchors_ = true
+
+[node name="Total" type="Label" parent="CanvasLayer2/Sprite2D" unique_id=183580076]
+anchors_preset = -1
+offset_left = -29.787231
+offset_top = 7.8014164
+offset_right = 185.5832
+offset_bottom = 108.801414
+scale = Vector2(0.236, 0.236)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 73
+text = "1000"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="CanvasLayer2/Sprite2D" unique_id=1834056597]
+offset_left = -31.678484
+offset_top = -1.8912518
+offset_right = 319.3215
+offset_bottom = 66.22591
+scale = Vector2(0.236, 0.236)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Total Score:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer2" unique_id=481853526]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(481, 135.5)
+scale = Vector2(4.25, 4.234375)
+texture = SubResource("GradientTexture2D_nelhj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2008538606]
+libraries/ = SubResource("AnimationLibrary_nelhj")

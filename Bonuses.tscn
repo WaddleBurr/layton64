@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cwnajop00bu4n"]
+
+[ext_resource type="Script" uid="uid://baemrjjivnbyh" path="res://bonuses.gd" id="1_o81l7"]
+
+[sub_resource type="Gradient" id="Gradient_kc5n2"]
+offsets = PackedFloat32Array(0.984252)
+colors = PackedColorArray(0.13725491, 0.40392157, 0.2901961, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hwhx7"]
+gradient = SubResource("Gradient_kc5n2")
+
+[node name="Bonuses" type="Node2D" unique_id=517179981]
+script = ExtResource("1_o81l7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1917171214]
+position = Vector2(518.5, 311.5)
+scale = Vector2(17.203125, 10.734375)
+texture = SubResource("GradientTexture2D_hwhx7")
+
+[node name="PuzzleIndex" type="Button" parent="." unique_id=1185857507]
+offset_left = 450.0
+offset_top = 99.0
+offset_right = 808.0
+offset_bottom = 245.0
+theme_override_font_sizes/font_size = 48
+text = "Puzzle Index"
+
+[connection signal="pressed" from="PuzzleIndex" to="." method="_on_puzzle_index_pressed"]

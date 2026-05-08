@@ -1,0 +1,36 @@
+	if global.puzzle==1:
+		$CanvasLayer/RichTextLabel.text="Professor Targo received ten pills at the hospital. Every day from today, this tablet must be sown day by day, but the ingredients are different, even if they have the same color and the same shape, so you should not mistake them if you want to live. Therefore, Professor Targo decided to write a number from one in that tablet. I wonder how many numbers he does need to write."
+		if global.subsequentfails == 0:
+			global.picarats=10
+			global.originalpicarats=10
+		global.puzzletype=0
+		global.puzzlelength=2
+		global.puzzletitle = "The Doctor's Pills"
+	if global.puzzle==2:
+		$CanvasLayer/RichTextLabel.text="What is 2 + 2?"
+		if global.subsequentfails == 0:
+			global.picarats=10
+			global.originalpicarats=10
+		global.puzzletype=1
+		$CanvasLayer/ButtonA.text="4"
+		$CanvasLayer/ButtonB.text="fish"
+		global.puzzletitle = "A fishy question"
+	if global.puzzle==3:
+		$CanvasLayer/RichTextLabel.text="What is 4 + 4?"
+		if global.subsequentfails == 0:
+			global.picarats=25
+			global.originalpicarats=25
+		$CanvasLayer/ButtonA.text="4"
+		$CanvasLayer/ButtonB.text="fish"
+		$CanvasLayer/ButtonC.text="8"
+		$CanvasLayer/ButtonD.text="sixteen"
+		global.puzzletype=2
+		global.puzzletitle = "A fishier question"
+	if global.puzzle==4:
+		$CanvasLayer/RichTextLabel.text="Mr. Junichi has ten cows. These ten cows are similar in appearance and body pattern and cannot be distinguished. So if you decide to push the sealant so that it can be distinguished from 0 to 9, if there are ten stamping marks for baking, how many irons will you need at least?"
+		if global.subsequentfails == 0:
+			global.picarats=30
+			global.originalpicarats=30
+		global.puzzletype=0
+		global.puzzlelength=1
+		global.puzzletitle = "A cow conundrum"
