@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://jj4mdxxrouvu"]
+
+[ext_resource type="Script" uid="uid://tyg45t7apros" path="res://intro.gd" id="1_gjrx4"]
+
+[sub_resource type="Gradient" id="Gradient_7eg0p"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gjrx4"]
+gradient = SubResource("Gradient_7eg0p")
+fill_to = Vector2(0.82608694, 0.17391305)
+
+[sub_resource type="Animation" id="Animation_sb8jg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["After years of working with the professor..."]
+}
+
+[sub_resource type="Animation" id="Animation_vltdc"]
+resource_name = "intro"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4.5, 8, 10, 12, 14),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["After years of working with the professor...", "Luke was tired of being refered to as the professor's \"Self-Proclaimed Apprentice\".", "After airing his grievances to Professor Layton, Luke was told that he would formally become the professor's apprentice if he was able to overcome a challenge set by the professor.", "First, he had to go through a platforming challenge set up by the professor", "Then, he had to solve the professor's ten puzzles", "Is Luke up to the task?", "Controls: WASD for movement
+Arrows for camera movement
+- and + to zoom in and out the camera
+Space to Jump
+Enter to interact"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_33sem"]
+_data = {
+&"RESET": SubResource("Animation_sb8jg"),
+&"intro": SubResource("Animation_vltdc")
+}
+
+[node name="Intro" type="Node2D" unique_id=1724812395]
+script = ExtResource("1_gjrx4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=433655314]
+position = Vector2(507.5, 317)
+scale = Vector2(16.859375, 10.90625)
+texture = SubResource("GradientTexture2D_gjrx4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=163869579]
+libraries/ = SubResource("AnimationLibrary_33sem")
+autoplay = &"intro"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1675421861]
+offset_left = 230.0
+offset_right = 716.0
+offset_bottom = 535.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "After years of working with the professor..."
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -23,4 +23,4 @@ func _on_continue_pressed() -> void:
 
 func _on_new_game_pressed() -> void:
 	global.goingtobonus=false
-	get_tree().change_scene_to_file("res://puzzle.tscn")
+	get_tree().change_scene_to_file("res://Intro.tscn")

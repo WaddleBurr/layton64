@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dajfxem1a3h4b"
+path="res://.godot/imported/03 Puzzles Reinvented.mp3-0c32094ebc4fceb5d351796128de5c16.mp3str"
+
+[deps]
+
+source_file="res://03 Puzzles Reinvented.mp3"
+dest_files=["res://.godot/imported/03 Puzzles Reinvented.mp3-0c32094ebc4fceb5d351796128de5c16.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

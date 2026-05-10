@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://cxn0nqftda48x" path="res://textures/distressed.png" id="12_1p8x6"]
 [ext_resource type="Material" uid="uid://uw6hx2nvoj7n" path="res://textures/distressedopen.tres" id="13_l4yif"]
 [ext_resource type="Material" uid="uid://b2n1b3c2y5hrh" path="res://textures/verydistressed.tres" id="14_i88oe"]
+[ext_resource type="AudioStream" uid="uid://d2riwa5xtiari" path="res://hit.mp3" id="15_1p8x6"]
+[ext_resource type="AudioStream" uid="uid://qpbfgyjob3wr" path="res://newsnap.mp3" id="15_xtous"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3owft"]
 resource_name = "pants"
@@ -386,18 +388,22 @@ light_specular = 0.0
 [node name="Luke2" parent="." unique_id=999415471 instance=ExtResource("1_43ngx")]
 transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 0, 0, 0)
 
-[node name="Skeleton3D" parent="Luke2/Armature" parent_id_path=PackedInt32Array(999415471, 1764212490) index="0" unique_id=1359700698]
-bones/0/rotation = Quaternion(-0.002297616, 0.00021728182, 0.011043388, 0.99993634)
-bones/2/rotation = Quaternion(0.22875807, -0.040578168, 0.1364002, 0.96302557)
-bones/3/rotation = Quaternion(-0.13620873, 0.39261177, 0.40023547, 0.8167709)
-bones/5/rotation = Quaternion(0.33091405, -0.051394425, -0.13865001, 0.93200356)
-bones/6/rotation = Quaternion(-0.55371696, -0.54758507, -0.2438486, 0.57800174)
-bones/8/rotation = Quaternion(-0.25195765, 0.035994425, -0.07008895, 0.9645255)
+[node name="Skeleton3D" parent="Luke2/Armature" parent_id_path=PackedInt32Array(999415471, 994263822) index="0" unique_id=586812171]
+bones/0/rotation = Quaternion(0.04359081, 0.07755137, 0.01838722, 0.9958653)
+bones/2/rotation = Quaternion(0.32840306, 0.43752867, 0.39391798, 0.7386128)
+bones/3/rotation = Quaternion(0.008757757, 0.1498378, 0.13878, 0.9788831)
+bones/5/rotation = Quaternion(0.25301135, -0.10379685, 0.24026394, 0.9313886)
+bones/6/rotation = Quaternion(0.3664497, -0.23596983, 0.60396975, 0.6672731)
+bones/8/rotation = Quaternion(0.028770762, 0.07896919, 0.12102062, 0.9890855)
+bones/10/rotation = Quaternion(-0.7071068, 1.9126931e-08, 7.251201e-08, 0.7071068)
+bones/11/rotation = Quaternion(1.7878234e-16, -3.5527124e-15, 2.36804e-09, 1)
+bones/13/rotation = Quaternion(-0.7071068, 2.301992e-08, -1.14658874e-07, 0.7071068)
+bones/14/rotation = Quaternion(1.638518e-16, 1.4210853e-14, -8.4153134e-10, 1)
 
-[node name="Luke" parent="Luke2/Armature/Skeleton3D" index="0" unique_id=1491175944]
+[node name="Luke" parent="Luke2/Armature/Skeleton3D" index="0" unique_id=1472624316]
 mesh = SubResource("ArrayMesh_1p8x6")
 
-[node name="AnimationPlayer" parent="Luke2" index="1" unique_id=559228089]
+[node name="AnimationPlayer" parent="Luke2" index="1" unique_id=309373528]
 speed_scale = 1.35
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=468784165]
@@ -423,5 +429,13 @@ transform = Transform3D(0.9999765, -0.005208484, 0.004455183, 0.005206003, 0.999
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=394520424]
 libraries/ = SubResource("AnimationLibrary_g1t5x")
 speed_scale = 1.35
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1934732256]
+stream = ExtResource("15_1p8x6")
+playback_type = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=138098910]
+stream = ExtResource("15_xtous")
+playback_type = 1
 
 [editable path="Luke2"]

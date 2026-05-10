@@ -11,17 +11,39 @@ func _process(delta: float) -> void:
 	pass
 
 func setuppuzzlelist():
-	$VBoxContainer/Puzzle001.text="No." + str(1+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[0+arrowadd*8]["puzzletitle"]
-	$VBoxContainer/Puzzle002.text="No." + str(2+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[1+arrowadd*8]["puzzletitle"]
-	$VBoxContainer/Puzzle003.text="No." + str(3+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[2+arrowadd*8]["puzzletitle"]
-	$VBoxContainer/Puzzle004.text="No." + str(4+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[3+arrowadd*8]["puzzletitle"]
-	$VBoxContainer/Puzzle005.text="No." + str(5+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[4+arrowadd*8]["puzzletitle"]
-	$VBoxContainer/Puzzle006.text="No." + str(6+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[5+arrowadd*8]["puzzletitle"]
-	$VBoxContainer/Puzzle007.text="No." + str(7+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[6+arrowadd*8]["puzzletitle"]
-	$VBoxContainer/Puzzle008.text="No." + str(8+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[7+arrowadd*8]["puzzletitle"]
+	$VBoxContainer/Puzzle001.visible=true
+	$VBoxContainer/Puzzle002.visible=true
+	$VBoxContainer/Puzzle003.visible=true
+	$VBoxContainer/Puzzle004.visible=true
+	$VBoxContainer/Puzzle005.visible=true
+	$VBoxContainer/Puzzle006.visible=true
+	$VBoxContainer/Puzzle007.visible=true
+	$VBoxContainer/Puzzle008.visible=true
+	if arrowadd == 0:
+		$VBoxContainer/Puzzle001.text="No." + str(1+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[0+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle002.text="No." + str(2+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[1+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle003.text="No." + str(3+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[2+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle004.text="No." + str(4+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[3+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle005.text="No." + str(5+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[4+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle006.text="No." + str(6+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[5+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle007.text="No." + str(7+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[6+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle008.text="No." + str(8+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[7+arrowadd*8]["puzzletitle"]
+	else:
+		$VBoxContainer/Puzzle001.text="No." + str(1+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[0+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle002.text="No." + str(2+arrowadd*8).pad_zeros(3) + ": " + puzzle.puzzles[1+arrowadd*8]["puzzletitle"]
+		$VBoxContainer/Puzzle003.visible=false
+		$VBoxContainer/Puzzle004.visible=false
+		$VBoxContainer/Puzzle005.visible=false
+		$VBoxContainer/Puzzle006.visible=false
+		$VBoxContainer/Puzzle007.visible=false
+		$VBoxContainer/Puzzle008.visible=false
+
 func _on_forward_arrow_pressed() -> void:
 	arrowadd+=1 # Replace with function body.
-	setuppuzzlelist()
+	if not arrowadd > 1:
+		setuppuzzlelist()
+	else:
+		arrowadd=1
 
 func _on_backward_arrow_pressed() -> void:
 	arrowadd-=1 # Replace with function body.

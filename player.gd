@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-
+var hitting = false
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
@@ -11,6 +11,11 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	var spring=get_node("/root/World/SpringArm3D")
 	# Handle jump.
+	if Input.is_action_just_pressed("interact"):
+		$Luke2/AnimationPlayer.play("Hit")
+		hitting = true
+		await get_tree().create_timer(1.166).timeout
+		hitting = false
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	if Input.is_action_pressed("camleft"):
@@ -106,9 +111,12 @@ func _physics_process(delta: float) -> void:
 			$Luke2/Armature/Skeleton3D/Luke.rotation.y=deg_to_rad(180)
 		else:
 			$Luke2/Armature/Skeleton3D/Luke.rotation.y=-direction.z*1.5+rad_to_deg(90)
-		$Luke2/AnimationPlayer.play("walk")
+		if hitting==false:
+			$Luke2/AnimationPlayer.play("walk")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		if hitting==false:
+			$Luke2/AnimationPlayer.play("Idle")
 
 	move_and_slide()

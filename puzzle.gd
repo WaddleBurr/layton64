@@ -159,6 +159,26 @@ func _on_button_pressed() -> void:
 				global.correct=true
 			else:
 				global.correct=false
+		if global.puzzle == 5:
+			if ($CanvasLayer/HBoxContainer/Digit1.text.strip_edges().to_lower()=="1" and $CanvasLayer/HBoxContainer/Digit2.text.strip_edges().to_lower()=="3"):
+				global.correct=true
+			else:
+				global.correct=false
+		if global.puzzle == 6:
+			if ($CanvasLayer/HBoxContainer/Digit1.text.strip_edges().to_lower()=="3"):
+				global.correct=true
+			else:
+				global.correct=false
+		if global.puzzle == 9:
+			if ($CanvasLayer/HBoxContainer/Digit1.text.strip_edges().to_lower()=="5"):
+				global.correct=true
+			else:
+				global.correct=false
+		if global.puzzle == 10:
+			if ($CanvasLayer/HBoxContainer/Digit1.text.strip_edges().to_lower()=="4"):
+				global.correct=true
+			else:
+				global.correct=false
 		$AnimationPlayer.play("end puzzle")
 		await get_tree().create_timer(1.5).timeout
 		get_tree().change_scene_to_file("res://Solveanimation.tscn")
@@ -173,6 +193,10 @@ func _on_button_a_pressed() -> void:
 		global.correct=false
 	if global.puzzle == 3:
 		global.correct=false
+	if global.puzzle == 7:
+		global.correct=true
+	if global.puzzle == 8:
+		global.correct=false
 	$AnimationPlayer.play("end puzzle")
 	await get_tree().create_timer(1.5).timeout
 	get_tree().change_scene_to_file("res://Solveanimation.tscn")
@@ -183,6 +207,10 @@ func _on_button_b_pressed() -> void:
 		global.correct=true
 	if global.puzzle == 3:
 		global.correct=false
+	if global.puzzle == 7:
+		global.correct=false
+	if global.puzzle == 8:
+		global.correct=false
 	$AnimationPlayer.play("end puzzle")
 	await get_tree().create_timer(1.5).timeout
 	get_tree().change_scene_to_file("res://Solveanimation.tscn")
@@ -192,6 +220,10 @@ func _on_button_b_pressed() -> void:
 func _on_button_c_pressed() -> void:
 	if global.puzzle == 3:
 		global.correct=true
+	if global.puzzle == 7:
+		global.correct=false
+	if global.puzzle == 8:
+		global.correct=true
 	$AnimationPlayer.play("end puzzle")
 	await get_tree().create_timer(1.5).timeout
 	get_tree().change_scene_to_file("res://Solveanimation.tscn")
@@ -199,6 +231,10 @@ func _on_button_c_pressed() -> void:
 
 func _on_button_d_pressed() -> void:
 	if global.puzzle == 3:
+		global.correct=false
+	if global.puzzle == 7:
+		global.correct=false
+	if global.puzzle == 8:
 		global.correct=false
 	$AnimationPlayer.play("end puzzle")
 	await get_tree().create_timer(1.5).timeout

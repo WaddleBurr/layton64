@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://skxwdpqwquag"
+path="res://.godot/imported/1-07 A Pleasant Afternoon 「Professor Layton vs. Ace Attorney ver.」.mp3-714194c5ab55b4650b7e520851e493cc.mp3str"
+
+[deps]
+
+source_file="res://1-07 A Pleasant Afternoon 「Professor Layton vs. Ace Attorney ver.」.mp3"
+dest_files=["res://.godot/imported/1-07 A Pleasant Afternoon 「Professor Layton vs. Ace Attorney ver.」.mp3-714194c5ab55b4650b7e520851e493cc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

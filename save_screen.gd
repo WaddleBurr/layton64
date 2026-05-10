@@ -13,20 +13,20 @@ func _process(delta: float) -> void:
 
 func _on_file_1_pressed() -> void:
 	if global.goingtobonus==true:
-		get_tree().change_scene_to_file("res://Bonuses.tscn") # Replace with function body.
+		get_tree().change_scene_to_file("res://puzzle_index.tscn") # Replace with function body.
 	else:
 		get_tree().change_scene_to_file("res://world.tscn")
 
 
 func _on_file_2_pressed() -> void:
 	if global.goingtobonus==true:
-		get_tree().change_scene_to_file("res://Bonuses.tscn") # Replace with function body.
+		get_tree().change_scene_to_file("res://puzzle_index.tscn") # Replace with function body.
 	else:
 		get_tree().change_scene_to_file("res://world.tscn")
 
 
 func _on_file_3_pressed() -> void:
 	if global.goingtobonus==true:
-		get_tree().change_scene_to_file("res://Bonuses.tscn") # Replace with function body.
+		get_tree().change_scene_to_file("res://puzzle_index.tscn") # Replace with function body.
 	else:
 		get_tree().change_scene_to_file("res://world.tscn")

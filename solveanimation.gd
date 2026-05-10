@@ -10,7 +10,19 @@ func _ready() -> void:
 	else:
 		$Luke2/AnimationPlayer.play("puzzlesolveincorrect")
 		$AnimationPlayer2.play("lukefaceincorrect")
-	await get_tree().create_timer(8.2/$AnimationPlayer.speed_scale).timeout
+	await get_tree().create_timer(.6/$AnimationPlayer.speed_scale).timeout
+	$AudioStreamPlayer.play()
+	await get_tree().create_timer(1.3659/$AnimationPlayer.speed_scale).timeout
+	$AudioStreamPlayer.play()
+	await get_tree().create_timer((2.6414-1.3659)/$AnimationPlayer.speed_scale).timeout
+	$AudioStreamPlayer.play()
+	await get_tree().create_timer((3.85-2.6414)/$AnimationPlayer.speed_scale).timeout
+	$AudioStreamPlayer2.play()
+	await get_tree().create_timer((8.3-3.85)/$AnimationPlayer.speed_scale).timeout
+
+
+
+
 	get_tree().change_scene_to_file("res://Correct-Incorrect.tscn")
 
 

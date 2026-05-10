@@ -42,12 +42,12 @@ theme_override_font_sizes/font_size = 48
 text = "Continue"
 
 [node name="Bonuses" type="Button" parent="." unique_id=781812180]
-offset_left = 387.0
-offset_top = 417.0
-offset_right = 648.0
-offset_bottom = 492.0
+offset_left = 375.0
+offset_top = 422.0
+offset_right = 672.0
+offset_bottom = 497.0
 theme_override_font_sizes/font_size = 48
-text = "Bonuses"
+text = "Puzzle Index"
 
 [connection signal="pressed" from="NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
