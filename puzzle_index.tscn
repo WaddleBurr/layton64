@@ -156,6 +156,13 @@ texture = SubResource("GradientTexture2D_2csxt")
 position = Vector2(9, 8)
 texture = ExtResource("3_7x1f3")
 
+[node name="Button" type="Button" parent="." unique_id=420088097]
+offset_left = 350.0
+offset_top = 234.0
+offset_right = 466.0
+offset_bottom = 265.0
+text = "Back to World"
+
 [node name="Solve" type="Button" parent="." unique_id=1595048399]
 offset_left = 530.0
 offset_top = 231.0
@@ -173,4 +180,5 @@ text = "Solve It!"
 [connection signal="pressed" from="VBoxContainer/Puzzle008" to="." method="_on_puzzle_008_pressed"]
 [connection signal="pressed" from="ForwardArrow" to="." method="_on_forward_arrow_pressed"]
 [connection signal="pressed" from="BackwardArrow" to="." method="_on_backward_arrow_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Solve" to="." method="_on_solve_pressed"]

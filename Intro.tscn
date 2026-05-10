@@ -62,6 +62,7 @@ texture = SubResource("GradientTexture2D_gjrx4")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=163869579]
 libraries/ = SubResource("AnimationLibrary_33sem")
 autoplay = &"intro"
+speed_scale = 0.5
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1675421861]
 offset_left = 230.0

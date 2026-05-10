@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 global="*uid://cr8brsvi7fwg0"
 puzzle="*uid://21o3wjkdxlg4"
+save="*uid://qikp8ypgtgo5"
 
 [display]
 

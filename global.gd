@@ -1,11 +1,10 @@
 extends Node
 var puzzle = 1
-var totalscore = 0
+var fileselected = 1
 var puzzlelength=2
 var punishment = 2
 var picarats = 10
 var originalpicarats = 10
-var hintcoins = 10
 var puzzletitle = "The Dotor's Pills"
 var correct = false
 var puzzletext = ""
@@ -15,6 +14,13 @@ var cansubmit = false
 var memoon = false
 var goingtobonus = false
 var puzzlepicture = ""
+var hitting = false
+var laytoncontact = false
+var indexdisabled=true
+var location = Vector3(0,0,0)
+var totalscore = 0
+var hintcoins = 15
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.

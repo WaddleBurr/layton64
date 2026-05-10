@@ -155,7 +155,7 @@ func _on_button_pressed() -> void:
 			else:
 				global.correct=false
 		if global.puzzle == 4:
-			if ($CanvasLayer/HBoxContainer/Digit1.text.strip_edges().to_lower()=="1"):
+			if ($CanvasLayer/HBoxContainer/Digit1.text.strip_edges().to_lower()=="6"):
 				global.correct=true
 			else:
 				global.correct=false
