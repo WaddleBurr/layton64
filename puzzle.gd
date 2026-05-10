@@ -7,6 +7,10 @@ func _ready() -> void:
 	$CanvasLayer/RichTextLabel.add_theme_font_size_override("normal_font_size", 14)
 #	getpuzzle()
 	puzzlestartup()
+	$CanvasLayer/HintScreen/RichTextLabel.text="Unlock a new hint?"
+	$CanvasLayer/HintScreen/HBoxContainer/Hint2.disabled=true
+	$CanvasLayer/HintScreen/HBoxContainer/Hint3.disabled=true	
+	$CanvasLayer/HintScreen/HBoxContainer/Hint4.disabled=true
 	$CanvasLayer/HintScreen.visible=false
 	$CanvasLayer.visible=false
 	$CanvasLayer/RichTextLabel.visible=false
@@ -72,6 +76,7 @@ func _ready() -> void:
 	$CanvasLayer/UI/Picarats.visible=true
 	$CanvasLayer/UI/Coin.visible=true
 	global.cansubmit=false
+	$AudioStreamPlayer.play()
 	puzzlesetup()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -145,6 +150,12 @@ func puzzlesetup():
 		$CanvasLayer/ButtonC.visible=true
 		$CanvasLayer/ButtonD.visible=true
 		$PuzzleUI/Back.text="Quit"
+	if global.hintsgiven > 0:
+		$CanvasLayer/HintScreen/HBoxContainer/Hint2.disabled=false
+	if global.hintsgiven > 1:
+		$CanvasLayer/HintScreen/HBoxContainer/Hint3.disabled=false
+	if global.hintsgiven > 2:
+		$CanvasLayer/HintScreen/HBoxContainer/Hint4.disabled=false
 	$CanvasLayer/RichTextLabel.visible=true
 
 func _on_button_pressed() -> void:
@@ -290,9 +301,91 @@ func _on_memoback_pressed() -> void:
 
 func _on_hint_pressed() -> void:
 	$CanvasLayer/HintScreen.visible=true # Replace with function body.
+	$CanvasLayer/HintScreen/RichTextLabel2.text=""
 	$PuzzleUI.visible=false
 
 
 func _on_hintback_pressed() -> void:
 	$CanvasLayer/HintScreen.visible=false # Replace with function body.
 	$PuzzleUI.visible=true
+
+
+func _on_yes_pressed() -> void:
+	if global.hintcoins > 0 and global.hintsgiven < 4 or global.hintcoins > 1:
+		if global.hintsgiven==3:
+			global.hintcoins-=2
+		else:
+			global.hintcoins-=1
+		global.hintsgiven+=1
+		puzzleid["hintsgiven"]=global.hintsgiven
+		if global.hintsgiven > 0:
+			$CanvasLayer/HintScreen/HBoxContainer/Hint2.disabled=false
+		if global.hintsgiven > 1:
+			$CanvasLayer/HintScreen/HBoxContainer/Hint3.disabled=false
+		if global.hintsgiven > 2:
+			$CanvasLayer/HintScreen/HBoxContainer/Hint4.disabled=false
+	$CanvasLayer/UI/Coin.text=str(global.hintcoins) + " coins"
+	$CanvasLayer/HintScreen/Yes.visible=false
+	$CanvasLayer/HintScreen/No.visible=false
+	var hintspawn = "hint" + str(global.hintsgiven) + "text"
+	$CanvasLayer/HintScreen/RichTextLabel2.text=puzzleid[hintspawn]
+	$CanvasLayer/HintScreen/No.visible=false
+	$CanvasLayer/HintScreen/RichTextLabel.text=""
+
+
+
+func _on_no_pressed() -> void:
+	$CanvasLayer/HintScreen.visible=false # Replace with function body.
+	$PuzzleUI.visible=true
+
+func _on_hint_1_pressed() -> void:
+	if global.hintsgiven > 0:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=puzzleid["hint1text"]
+		$CanvasLayer/HintScreen/Yes.visible=false
+		$CanvasLayer/HintScreen/No.visible=false
+		$CanvasLayer/HintScreen/RichTextLabel.text=""
+
+	else:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=""
+		$CanvasLayer/HintScreen/Yes.visible=true
+		$CanvasLayer/HintScreen/No.visible=true
+		$CanvasLayer/HintScreen/RichTextLabel.text="Unlock a new Hint?"
+
+
+func _on_hint_2_pressed() -> void:
+	if global.hintsgiven > 1:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=puzzleid["hint2text"]
+		$CanvasLayer/HintScreen/Yes.visible=false
+		$CanvasLayer/HintScreen/No.visible=false
+		$CanvasLayer/HintScreen/RichTextLabel.text=""
+	else:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=""
+		$CanvasLayer/HintScreen/Yes.visible=true
+		$CanvasLayer/HintScreen/No.visible=true
+		$CanvasLayer/HintScreen/RichTextLabel.text="Unlock a new Hint?"
+
+func _on_hint_3_pressed() -> void:
+	if global.hintsgiven > 2:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=puzzleid["hint3text"]
+		$CanvasLayer/HintScreen/Yes.visible=false
+		$CanvasLayer/HintScreen/No.visible=false
+		$CanvasLayer/HintScreen/RichTextLabel.text=""
+	else:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=""
+		$CanvasLayer/HintScreen/Yes.visible=true
+		$CanvasLayer/HintScreen/No.visible=true
+		$CanvasLayer/HintScreen/RichTextLabel.text="Unlock a new Hint?"
+
+
+func _on_hint_4_pressed() -> void:
+	if global.hintsgiven > 3:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=puzzleid["hint4text"]
+		$CanvasLayer/HintScreen/Yes.visible=false
+		$CanvasLayer/HintScreen/No.visible=false
+		$CanvasLayer/HintScreen/RichTextLabel.text=""
+
+	else:
+		$CanvasLayer/HintScreen/RichTextLabel2.text=""
+		$CanvasLayer/HintScreen/Yes.visible=true
+		$CanvasLayer/HintScreen/No.visible=true
+		$CanvasLayer/HintScreen/RichTextLabel.text="Unlock the Super Hint?\nWarning: Costs 2 Hint Coins"

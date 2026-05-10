@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://djvt2d2srl4nv" path="res://bigeraseer.png" id="5_hrnaw"]
 [ext_resource type="Texture2D" uid="uid://n750n7qu5n40" path="res://smallpencil.png" id="6_dcmwq"]
 [ext_resource type="Texture2D" uid="uid://bc34dj4funt0p" path="res://bigpencil.png" id="7_soxwv"]
+[ext_resource type="AudioStream" uid="uid://dajfxem1a3h4b" path="res://03 Puzzles Reinvented.mp3" id="8_hrnaw"]
 
 [sub_resource type="Gradient" id="Gradient_0i81r"]
 offsets = PackedFloat32Array(0)
@@ -2926,7 +2927,6 @@ toggle_mode = true
 icon = SubResource("GradientTexture2D_16wmo")
 
 [node name="HintScreen" type="CanvasLayer" parent="CanvasLayer" unique_id=723650711]
-visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/HintScreen" unique_id=1319408402]
 position = Vector2(480.5, 404.5)
@@ -2941,12 +2941,21 @@ texture = SubResource("GradientTexture2D_0i81r")
 anchors_preset = -1
 anchor_right = 0.042000003
 anchor_bottom = 0.074
-offset_left = 407.0
-offset_top = 398.0
-offset_right = 517.68
-offset_bottom = 384.04
+offset_left = 376.0
+offset_top = 368.0
+offset_right = 538.68
+offset_bottom = 405.04
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Unlock a new hint?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/HintScreen" unique_id=1541951831]
+offset_left = 352.0
+offset_top = 318.0
+offset_right = 596.0
+offset_bottom = 519.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 
 [node name="Yes" type="Button" parent="CanvasLayer/HintScreen" unique_id=1043540106]
 offset_left = 412.0
@@ -3142,6 +3151,10 @@ position = Vector2(866.75, 296)
 scale = Vector2(7.8359375, 11.703125)
 texture = SubResource("GradientTexture2D_qcpr0")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=497405283]
+stream = ExtResource("8_hrnaw")
+parameters/looping = true
+
 [connection signal="pressed" from="CanvasLayer/ButtonA" to="." method="_on_button_a_pressed"]
 [connection signal="pressed" from="CanvasLayer/ButtonB" to="." method="_on_button_b_pressed"]
 [connection signal="pressed" from="CanvasLayer/ButtonC" to="." method="_on_button_c_pressed"]
@@ -3161,6 +3174,12 @@ texture = SubResource("GradientTexture2D_qcpr0")
 [connection signal="toggled" from="CanvasLayer/Memo/Orange" to="CanvasLayer/Memo/Memoscreen" method="_on_orange_toggled"]
 [connection signal="toggled" from="CanvasLayer/Memo/Tan" to="CanvasLayer/Memo/Memoscreen" method="_on_tan_toggled"]
 [connection signal="toggled" from="CanvasLayer/Memo/Brown" to="CanvasLayer/Memo/Memoscreen" method="_on_brown_toggled"]
+[connection signal="pressed" from="CanvasLayer/HintScreen/Yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="CanvasLayer/HintScreen/No" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="CanvasLayer/HintScreen/HBoxContainer/Hint1" to="." method="_on_hint_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/HintScreen/HBoxContainer/Hint2" to="." method="_on_hint_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/HintScreen/HBoxContainer/Hint3" to="." method="_on_hint_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/HintScreen/HBoxContainer/Hint4" to="." method="_on_hint_4_pressed"]
 [connection signal="pressed" from="CanvasLayer/HintScreen/Hintback" to="." method="_on_hintback_pressed"]
 [connection signal="pressed" from="PuzzleUI/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="PuzzleUI/Hint" to="." method="_on_hint_pressed"]

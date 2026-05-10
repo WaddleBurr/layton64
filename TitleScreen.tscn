@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://db6r0s6x632xa"]
 
 [ext_resource type="Script" uid="uid://bvnyv0ygrdnnu" path="res://title_screen.gd" id="1_fnlyl"]
+[ext_resource type="AudioStream" uid="uid://biqvke7elxusy" path="res://01 Professor Layton’s Theme.mp3" id="2_pkhjh"]
 
 [sub_resource type="Gradient" id="Gradient_fnlyl"]
 offsets = PackedFloat32Array(0.984252)
@@ -48,6 +49,11 @@ offset_right = 672.0
 offset_bottom = 497.0
 theme_override_font_sizes/font_size = 48
 text = "Puzzle Index"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=583349564]
+stream = ExtResource("2_pkhjh")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]

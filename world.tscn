@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://c7prgemdyid5b" path="res://textures/Shoe.png" id="11_70uel"]
 [ext_resource type="Texture2D" uid="uid://cxwykwv3essvy" path="res://extratextures/Hat.png" id="11_hiqwa"]
 [ext_resource type="Texture2D" uid="uid://dfjvkwufe4h5h" path="res://extratextures/Head.png" id="13_2u3nc"]
+[ext_resource type="AudioStream" uid="uid://skxwdpqwquag" path="res://1-07 A Pleasant Afternoon 「Professor Layton vs. Ace Attorney ver.」.mp3" id="15_hiqwa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tlwt5"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -930,6 +931,11 @@ mesh = SubResource("BoxMesh_tlwt5")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor5" unique_id=1549112113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.378335, 0)
 shape = SubResource("BoxShape3D_tlwt5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=371435449]
+stream = ExtResource("15_hiqwa")
+autoplay = true
+parameters/looping = true
 
 [connection signal="dialogue" from="." to="Player" method="_on_world_dialogue"]
 [connection signal="pressed" from="CanvasLayer/Save" to="." method="_on_save_pressed"]
