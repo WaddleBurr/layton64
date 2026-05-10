@@ -20,6 +20,7 @@ var indexdisabled=true
 var location = Vector3(0,0,0)
 var totalscore = 0
 var hintcoins = 15
+var puzzleindex = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

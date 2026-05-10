@@ -3,6 +3,7 @@ var arrowadd=0
 var puzzleid=puzzle.puzzles
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	global.puzzleindex=true
 	setuppuzzlelist() # Replace with function body.
 
 

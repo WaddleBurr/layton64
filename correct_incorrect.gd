@@ -33,7 +33,10 @@ func _ready() -> void:
 	await get_tree().create_timer(1).timeout
 	if global.correct==true:
 		global.correct==false
-		get_tree().change_scene_to_file("res://puzzle_index.tscn")
+		if global.puzzleindex==true:
+			get_tree().change_scene_to_file("res://puzzle_index.tscn")
+		else:
+			get_tree().change_scene_to_file("res://world.tscn")
 	else:
 		global.correct==false
 		get_tree().change_scene_to_file("res://puzzle.tscn")

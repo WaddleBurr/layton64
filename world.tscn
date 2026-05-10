@@ -16,6 +16,13 @@
 [ext_resource type="Texture2D" uid="uid://dfjvkwufe4h5h" path="res://extratextures/Head.png" id="13_2u3nc"]
 [ext_resource type="AudioStream" uid="uid://skxwdpqwquag" path="res://1-07 A Pleasant Afternoon 「Professor Layton vs. Ace Attorney ver.」.mp3" id="15_hiqwa"]
 
+[sub_resource type="Gradient" id="Gradient_hiqwa"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2u3nc"]
+gradient = SubResource("Gradient_hiqwa")
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tlwt5"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -663,6 +670,22 @@ offset_bottom = 31.0
 size_flags_horizontal = 4
 disabled = true
 text = "Puzzle Index"
+
+[node name="Dialogue" type="CanvasLayer" parent="CanvasLayer" unique_id=1347756303]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Dialogue" unique_id=790985786]
+modulate = Color(1, 1, 1, 0.40392157)
+position = Vector2(818, 179.5)
+scale = Vector2(4.4375, 2.953125)
+texture = SubResource("GradientTexture2D_2u3nc")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Dialogue" unique_id=562925329]
+offset_left = 675.0
+offset_top = 86.0
+offset_right = 958.0
+offset_bottom = 272.0
+text = "Layton: Blah Blah Blah"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1250609833]
 environment = SubResource("Environment_036b0")
